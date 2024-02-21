@@ -8,6 +8,10 @@
   filter: drop-shadow(0px 0px 4px var(--temp-color));
 }
 
+.about-wrapper * {
+  border-color: var(--temp-color);
+}
+
 .about-wrapper:before {
   /* Generated from -- https://css-generators.com/custom-corners/ */
   clip-path: polygon(0 80.00px,80.00px 0,calc(100% - 80.00px) 0,100% 80.00px,100% calc(100% - 80.00px),calc(100% - 80.00px) 100%,80.00px 100%,0 calc(100% - 80.00px),0 80.00px,4px  calc(80.00px + 1.66px),4px calc(100% - 80.00px - 1.66px),calc(80.00px + 1.66px) calc(100% - 4px),calc(100% - 80.00px - 1.66px) calc(100% - 4px),calc(100% - 4px) calc(100% - 80.00px - 1.66px),calc(100% - 4px) calc(80.00px + 1.66px),calc(100% - 80.00px - 1.66px) 4px,calc(80.00px + 1.66px) 4px,4px calc(80.00px + 1.66px));
@@ -15,13 +19,4 @@
   content: "";
   inset: 0;
   background: var(--temp-color);
-}
-
-.about-wrapper .about-pictures {
-  border: solid 4px var(--temp-color);
-}
-
-.about-wrapper .about-trophy {
-  border: solid 4px var(--temp-color);
-  transform: rotate(45deg);
 }

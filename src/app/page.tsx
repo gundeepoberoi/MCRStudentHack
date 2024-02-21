@@ -1,5 +1,5 @@
-import About from "./about/about";
-import FAQ from "./faq/faq";
+import About from "@/components/sections/about";
+import FAQ from "@/components/sections/faq";
 import Schedule from "@/components/sections/schedule";
 
 export default function Home() {

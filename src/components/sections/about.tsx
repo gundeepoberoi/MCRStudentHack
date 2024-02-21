@@ -1,13 +1,24 @@
 import Image from "next/image";
 import "./about.css";
 
+function AboutTrophy(props: {year: string, title: string}) {
+  return (
+    <div className="text-center">
+      <Image className="border-solid border-2 mx-auto mb-2" src=""
+        width="100" height="100" alt="trophy" />
+      <h6>{props.year}</h6>
+      <p>{props.title}</p>
+    </div>
+  );
+}
+
 export default function About() {
   return (
-    <section className="mt-48">
+    <section className="my-24">
       <div className="about-wrapper min-w-xl px-16 py-8">
         <h1 className="text-5xl">About</h1>
         <div className="flex flex-wrap items-start mt-8">
-          <div className="about-pictures w-full lg:w-5/12 h-auto">
+          <div className="w-full lg:w-5/12 h-auto border-solid border-2">
             <Image className="w-full" width="480" height="320" src="" alt="placeholder" />
           </div>
           <div className="w-full lg:w-7/12 pt-4 lg:pl-8 lg:pt-0">
@@ -25,14 +36,14 @@ export default function About() {
           </div>
         </div>
         <div className="flex flex-wrap justify-between gap-16 py-16">
-          <div className="about-trophy w-16 h-16"></div>
-          <div className="about-trophy w-16 h-16"></div>
-          <div className="about-trophy w-16 h-16"></div>
-          <div className="about-trophy w-16 h-16"></div>
-          <div className="about-trophy w-16 h-16"></div>
-          <div className="about-trophy w-16 h-16"></div>
-          <div className="about-trophy w-16 h-16"></div>
-          <div className="about-trophy w-16 h-16"></div>
+          <AboutTrophy year="2016" title="GreatUniHack" />
+          <AboutTrophy year="2017" title="GreatUniHack" />
+          <AboutTrophy year="2018" title="GreatUniHack" />
+          <AboutTrophy year="2019" title="GreatUniHack" />
+          <AboutTrophy year="2020" title="GreatUniHack" />
+          <AboutTrophy year="2021" title="GreatUniHack" />
+          <AboutTrophy year="2022" title="GreatUniHack" />
+          <AboutTrophy year="2023" title="GreatUniHack" />
         </div>
       </div>
     </section>
