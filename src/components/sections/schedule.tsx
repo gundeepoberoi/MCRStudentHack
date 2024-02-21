@@ -5,33 +5,21 @@ const Schedule = () => {
       className="flex flex-col items-center min-h-screen w-full py-4"
     >
       <h1 className="text-4xl font-bold">Schedule</h1>
-      <div className="flex flex-auto h-screen w-full gap-x-10 items-center justify-center snap-y snap-mandatory">
-        <div className="flex basis-full h-full items-center justify-end">
+      <div className="flex h-screen w-full gap-x-10 items-center justify-center">
+        <div className="flex w-1/2 h-screen items-center justify-end bg-purple-500 px-5">
           <h1 className="text-7xl uppercase font-bold">
             12<sup>th</sup> March
           </h1>
         </div>
-        <div className="flex flex-col basis-full bg-orange-500 h-full items-center">
-          <div className="snap-start">
-            <h1 className="text-wrap">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero
-              corporis illum ipsum quo perspiciatis maxime non dignissimos amet
-              ab error? Doloremque quod laboriosam deleniti sit harum.
-              Laudantium expedita sed illo! Lorem ipsum dolor, sit amet
-              consectetur adipisicing elit. Libero corporis illum ipsum quo
-              perspiciatis maxime non dignissimos amet ab error? Doloremque quod
-              laboriosam deleniti sit harum. Laudantium expedita sed illo! Lorem
-              ipsum dolor, sit amet consectetur adipisicing elit. Libero
-              corporis illum ipsum quo perspiciatis maxime non dignissimos amet
-              ab error? Doloremque quod laboriosam deleniti sit harum.
-              Laudantium expedita sed illo!
-            </h1>
+        <div className="flex flex-col w-1/2 h-full bg-orange-500 snap-y snap-mandatory overflow-y-auto px-5 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
+          <div className="flex h-full shrink-0 snap-start items-center">
+            <h1 className="text-wrap">Event 1</h1>
           </div>
-          <div className="snap-start">
-            <h1 className="text-wrap">Hello World</h1>
+          <div className="flex h-full shrink-0 snap-start items-center">
+            <h1 className="text-wrap">Event 2</h1>
           </div>
-          <div className="snap-start">
-            <h1 className="text-wrap">Hakuna Matata</h1>
+          <div className="flex h-full shrink-0 snap-start items-center">
+            <h1 className="text-wrap">Event 3</h1>
           </div>
         </div>
       </div>
