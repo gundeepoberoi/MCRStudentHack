@@ -1,7 +1,7 @@
 import About from "@/components/sections/about";
 import FAQ from "@/components/sections/faq";
 import Schedule from "@/components/sections/schedule";
-import Alt1 from "./alt 1.svg";
+import Alt1 from "./logos/alt 1.svg";
 
 export default function Home() {
   return (
