@@ -2,9 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
+
+.flip-card {
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+}
+
 @layer base {
   :root {
-    --background: 0 0% 100%;
+    --background: 0 0% 100%; 
     --foreground: 222.2 84% 4.9%;
 
     --card: 0 0% 100%;
@@ -34,7 +54,9 @@
 
     --radius: 0.5rem;
 
-    --sh-background: 213 95% 9%;
+    --sh-background: 0 0% 0%;
+    /* --sh-background: 213 95% 9%; */
+
     --sh-foreground: 210 40% 98%;
     --sh-primary: 178 18% 71%;
     --sh-secondary: 190 49% 37%;
