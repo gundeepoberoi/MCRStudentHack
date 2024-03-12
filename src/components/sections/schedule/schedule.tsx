@@ -1,7 +1,10 @@
-import { Card, CardContent } from "../ui/card";
-import { Meteors } from "../ui/meteors";
+import {
+  ScheduleHeader,
+  ScheduleLgScreenLayout,
+  type ScheduleItems,
+} from "./scheduleComponents";
 
-const scheduleList = [
+const scheduleList: ScheduleItems = [
   {
     date: "April 13",
     datetime: "2024-04-13",
@@ -33,69 +36,6 @@ const scheduleList = [
   },
 ];
 
-const ScheduleHeader = ({
-  title,
-  description,
-}: {
-  title: string;
-  description: string;
-}) => {
-  return (
-    <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
-      <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-4xl lg:pr-24">
-        <h2 className="font-display text-4xl font-medium tracking-tighter text-white sm:text-5xl">
-          {title}
-        </h2>
-        <p className="mt-4 font-display text-2xl tracking-tight text-white">
-          {description}
-        </p>
-      </div>
-    </div>
-  );
-};
-
-const ScheduleLgScreenLayout = () => {
-  return (
-    <div className="hidden lg:grid lg:grid-cols-2 lg:gap-x-8">
-      <div className="absolute inset-0 h-full w-full bg-gradient-to-r from-blue-500 to-teal-500 transform scale-[1.10] rounded-full blur-3xl -z-1 opacity-60" />
-      {scheduleList.map((day, index) => (
-        <div key={day.date + index} className="flex flex-col">
-          <h3 className="text-2xl font-semibold tracking-tight z-10">
-            <time dateTime={day.datetime}>{day.date}</time>
-          </h3>
-          <p className="mt-1.5 text-base tracking-tight z-10">{day.desc}</p>
-
-          <Card className="mt-10 space-y-8 bg-gray-950 px-10 py-14 text-center flex flex-col grow isolate shadow-lg ring-1 ring-black/5 border-none backdrop-blur-sm text-white overflow-hidden">
-            <Meteors number={20} className="bg-[#18D1D4] z-10" />
-            <CardContent>
-              <ol role="list" className="space-y-8">
-                {day.events.map((event, index) => (
-                  <li key={event.title + index} aria-label={event.title}>
-                    <h4 className="text-lg font-semibold tracking-tight">
-                      {event.title}
-                    </h4>
-                    <p className="mt-1 tracking-tight">{event.description}</p>
-                    <p className="mt-1 font-mono text-sm">
-                      <time dateTime={event.time}>{event.time}</time>
-                    </p>
-                    <div
-                      className={
-                        index !== day.events.length - 1
-                          ? "mx-auto mt-8 h-0.5 w-48 bg-white/60 rounded-full"
-                          : "hidden"
-                      }
-                    ></div>
-                  </li>
-                ))}
-              </ol>
-            </CardContent>
-          </Card>
-        </div>
-      ))}
-    </div>
-  );
-};
-
 const ScheduleDefaultScreenLayout = () => {
   return;
 };
@@ -111,20 +51,6 @@ const Schedule = () => {
       <div className="relative mt-14 sm:mt-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative">
           <div className="mx-auto grid max-w-2xl grid-cols-1 gap-y-6 sm:grid-cols-2 lg:hidden">
-            {/* <Tabs defaultValue={scheduleList[0].date}>
-              <TabsList className="-mx-4 flex gap-x-4 gap-y-10 overflow-x-auto pb-4 pl-4 sm:mx-0 sm:flex-col sm:pb-0 sm:pl-0 sm:pr-8">
-                {scheduleList.map((date) => (
-                  <TabsTrigger key={date.date} value={date.date}>
-                    {date.date}
-                  </TabsTrigger>
-                ))}
-              </TabsList>
-              {scheduleList.map((date) => (
-                <TabsContent key={date.date} value={date.date}>
-                  <div className="text-white">{date.desc}</div>
-                </TabsContent>
-              ))}
-            </Tabs> */}
             {/* <div
               className="-mx-4 flex gap-x-4 gap-y-10 overflow-x-auto pb-4 pl-4 sm:mx-0 sm:flex-col sm:pb-0 sm:pl-0 sm:pr-8"
               role="tablist"
@@ -323,7 +249,7 @@ const Schedule = () => {
               ></span>
             </div> */}
           </div>
-          <ScheduleLgScreenLayout />
+          <ScheduleLgScreenLayout data={scheduleList} />
         </div>
       </div>
     </section>

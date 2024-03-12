@@ -1,6 +1,6 @@
 import About from "@/components/sections/about/about";
 import FAQ from "@/components/sections/faq";
-import Schedule from "@/components/sections/schedule";
+import Schedule from "@/components/sections/schedule/schedule";
 import Alt1 from "@/assets/logos/alt 1.svg";
 
 export default function Home() {
