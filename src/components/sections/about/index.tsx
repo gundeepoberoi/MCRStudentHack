@@ -29,7 +29,7 @@ function AboutTrophy(props: {
 
 export default function About() {
   return (
-    <section className="my-24">
+    <section id="about" className="my-24">
       <div className="about-wrapper min-w-xl px-8 md:px-16 py-8">
         <div className="about-overlay"></div>
         <h1 className="text-5xl ml-8">About</h1>

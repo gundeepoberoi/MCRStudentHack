@@ -1,20 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Meteors } from "@/components/ui/meteors";
-
-interface Events {
-  title: string;
-  description: string;
-  time: string;
-}
-
-interface ScheduleItem {
-  date: string;
-  datetime: string;
-  desc: string;
-  events: Events[];
-}
-
-interface ScheduleItems extends Array<ScheduleItem> {}
+import { ScheduleItems } from "@/lib/schedule";
 
 const ScheduleHeader = ({
   title,
@@ -286,4 +272,4 @@ const ScheduleScreenLayout = () => {
   );
 };
 
-export { ScheduleHeader, ScheduleLgScreenLayout, type ScheduleItems };
+export { ScheduleHeader, ScheduleLgScreenLayout };
