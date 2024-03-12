@@ -60,7 +60,7 @@ export default function FAQ() {
         <div className={`${(selectedId >= 0) ? 'lg:w-5/12' : ''}
           w-full max-h-[40rem] overflow-auto scrollbar-hide
           bg-black/30 pt-8 transition-all`}>
-         <h3 className="text-2xl text-center font-bold px-8 pb-4">Frequently Asked Questions</h3>
+         <h3 className="text-5xl text-center font-bold px-8 pb-4">Frequently Asked Questions</h3>
          {faqQuestions.map((faq, i) => {
            return (
              <div key={`faq-q-${i}`}
@@ -71,14 +71,14 @@ export default function FAQ() {
                  setSelectedId(i === selectedId ? -1 : i);
                }}>
               <h3 className="text-lg">{i+1}. {faq.question}</h3>
-              <h3 className="text-xl">&#8250;</h3>
+              <h3 className="text-lg">&#8250;</h3>
             </div>
            );
          })}
         </div>
         <div className={`${(selectedId >= 0) ? 'lg:w-7/12' : 'hidden'} w-full bg-primary p-8 transition-all`}>
-          <h3 className="text-2xl font-bold pb-4">Answer</h3>
-          <p className="whitespace-pre-wrap">
+          <h3 className="text-4xl font-bold pb-4">Answer</h3>
+          <p className="whitespace-pre-wrap text-lg">
             {selectedId >= 0 ? faqQuestions[selectedId].answer : ""}
           </p>
         </div>
