@@ -6,8 +6,7 @@ import { SparklesCore } from "@/components/sections/sparkles";
 import Alt1 from "@/assets/logos/alt 1.svg";
 
 export default function Home() {
-  return (
-    
+  return (    
     <main className="flex min-h-screen bg-black flex-col items-center justify-center p-24 relative">
       {/* <h1 className="text-6xl font-bold">MCRStudentHack</h1> */}
       <div className="w-full h-full absolute inset-0">
