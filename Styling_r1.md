@@ -15,8 +15,7 @@ schedule.tsx:
 2. Add text-lg to Event 1, Event 2, Event 3 (Consistent with About)
 3. Change font size of 12th March from 7xl to 4xl (It should not be larger than the heading "Schedule" and "About" so either make the headings bigger or make the date smaller; Personally, I think the headings are already big enough but I am not good at design)
 4. Add py-7 to the heading "Schedule" such that the headings "About" and "Schedule" will have the same distance to the <div></div> below them
-5. Suggestion: do you think putting the date, i.e. 12th March on the left or center is better? 
-6. 
+5. 
 
 
 

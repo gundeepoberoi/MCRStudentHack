@@ -7,7 +7,7 @@ const Schedule = () => {
       <h1 className="text-5xl font-bold py-7">Schedule</h1>
       <div className="flex h-screen w-full gap-x-10 items-center justify-center">
         <div className="flex w-1/2 h-screen items-center justify-end bg-purple-500 px-5">
-          <h1 className="text-center text-4xl uppercase font-bold">
+          <h1 className="text-4xl uppercase font-bold">
             12<sup>th</sup> March
           </h1>
         </div>
