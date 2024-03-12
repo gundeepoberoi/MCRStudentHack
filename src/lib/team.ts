@@ -35,22 +35,25 @@ const members: Member[] = [
     {
         name: "Aadityaa M.",
         role: "Dev Team",
-        image: "./team/aadityaa_m.jpg"
+        image: "./team/aadityaa_m.jpg",
+        link: "https://www.linkedin.com/in/aadityaa-mehrotra"
     }, 
     {
-        name: "Nader Takruri",
-        role: "Co-Director",
-        image: "./naddy.jpg"
+        name: "Abdullah S.",
+        role: "PR Team",
+        image: "./team/abdullah_s.jpg",
+        link: "https://www.linkedin.com/in/abdullahsweesi"
     }, 
     {
-        name: "Nader Takruri",
-        role: "Co-Director",
-        image: "./naddy.jpg"
+        name: "Long P.",
+        role: "Dev Team",
+        image: "./team/long_p.jpg",
+        link: "https://www.linkedin.com/in/yat-long-poon/"
     }, 
     {
-        name: "Nader Takruri",
+        name: "Insiya M.",
         role: "Co-Director",
-        image: "./naddy.jpg"
+        image: "./team/insiya_m.jpg"
     }, 
     {
         name: "Nader Takruri",
