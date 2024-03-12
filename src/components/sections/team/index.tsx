@@ -13,7 +13,7 @@ export default function Team() {
             <h1 className="flex justify-center md:text-6xl text-5xl">Our Crew</h1>
                 <div className="w-[99vw]">
                     {/* <LampContainer> */}
-                    <div className="container hidden md:block">
+                    <div className="container hidden sm:block">
                         <div className="mt-10 rounded-md flex flex-col antialiased items-center justify-center overflow-hidden">
                             <InfiniteMovingCards speed="slow" direction="right">
                                 {members_split[0].map((member, index) => {
@@ -40,12 +40,12 @@ export default function Team() {
                         </div>
                     </div>
 
-                    <div className="container md:hidden">
-                        <div className="mt-10 rounded-md grid grid-cols-2 gap-2 antialiased items-center justify-center">
+                    <div className="container sm:hidden">
+                        <div className="mt-10 rounded-md grid grid-cols-1 min-[400px]:grid-cols-2 gap-2 antialiased items-center justify-center">
                             {/* <ul> */}
                             {Members.map((member, index) => {
                                     return (
-                                        <div key={index}>
+                                        <div key={index} className="justify-self-center row-auto">
                                             <Member {...member} />
                                         </div>
                                     );

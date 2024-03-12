@@ -12,7 +12,7 @@ import Helmet from "@/assets/helmet";
 export default function Home() {
   return (
     
-    <main className="flex min-h-screen bg-black flex-col items-center justify-center p-24 relative">
+    <main className="flex min-h-screen bg-black flex-col items-center justify-center p-24 relative overflow-hidden">
       {/* <h1 className="text-6xl font-bold">MCRStudentHack</h1> */}
       <div className="w-full h-full absolute inset-0">
         <SparklesCore
