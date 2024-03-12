@@ -84,7 +84,7 @@ const ScheduleLgScreenLayout = ({ data }: { data: ScheduleItems }) => {
 
 const ScheduleScreenLayout = () => {
   return (
-    <div>
+    <div className="overflow-x-auto">
       {/* <div
               className="-mx-4 flex gap-x-4 gap-y-10 overflow-x-auto pb-4 pl-4 sm:mx-0 sm:flex-col sm:pb-0 sm:pl-0 sm:pr-8"
               role="tablist"
