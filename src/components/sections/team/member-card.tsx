@@ -2,7 +2,7 @@ import Helmet from '@/assets/helmet';
 import Link from 'next/link';
 import { FaLinkedin } from "react-icons/fa";
 import { BackgroundGradient } from '@/components/ui/background-gradient';
-import { CardFlip } from '@/components/ui/flip-card';
+import { CardFlip } from '@/components/ui/flip-card/flip-card';
 
 export default function Member( {name, role, image, link }: any ) {
     return (
@@ -65,6 +65,10 @@ export default function Member( {name, role, image, link }: any ) {
                                 <Link href={link}>
                                     <FaLinkedin size={30} />
                                 </Link>
+                            }
+
+                            {link == null &&
+                                <div  className='size-8'/> // Put space so the text is somewhat aligned like the rest 
                             }
                            
                         </BackgroundGradient>

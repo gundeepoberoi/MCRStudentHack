@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { motion } from 'framer-motion';
-import { BackgroundGradient } from "./background-gradient";
+import { BackgroundGradient } from "../background-gradient";
+import './flip-card.css'
+
 
 export const CardFlip = ({
     childrenFront,
