@@ -42,7 +42,7 @@ const ScheduleLgScreenLayout = ({ data }: { data: ScheduleItems }) => {
     <div className="hidden lg:grid lg:grid-cols-2 lg:gap-x-8">
       <div className="absolute inset-0 h-full w-full bg-gradient-to-r from-blue-500 to-teal-500 transform scale-[1.10] rounded-full blur-3xl -z-1 opacity-60" />
       {data.map((day, index) => (
-        <div key={day.date + index} className="flex flex-col">
+        <div key={`date-${day.date}-${index}`} className="flex flex-col">
           <h3 className="text-2xl font-semibold tracking-tight z-10">
             <time dateTime={day.datetime}>{day.date}</time>
           </h3>
@@ -53,7 +53,10 @@ const ScheduleLgScreenLayout = ({ data }: { data: ScheduleItems }) => {
             <CardContent>
               <ol role="list" className="space-y-8">
                 {day.events.map((event, index) => (
-                  <li key={event.title + index} aria-label={event.title}>
+                  <li
+                    key={`event-${event.title}-${index}`}
+                    aria-label={event.title}
+                  >
                     <h4 className="text-lg font-semibold tracking-tight">
                       {event.title}
                     </h4>
