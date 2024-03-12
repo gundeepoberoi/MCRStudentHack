@@ -52,69 +52,40 @@ const members: Member[] = [
     }, 
     {
         name: "Insiya M.",
-        role: "Co-Director",
-        image: "./team/insiya_m.jpg"
+        role: "Logistics Team",
+        image: "./team/insiya_m.jpg",
+        link: "https://www.linkedin.com/in/insiya-mullamitha/"
     }, 
     {
-        name: "Nader Takruri",
-        role: "Co-Director",
-        image: "./naddy.jpg"
+        name: "Hanin S.",
+        role: "PR-Graphics Team",
+        image: "./team/hanin_s.png",
+        link: "https://www.linkedin.com/in/haninsofia/"
     }, 
     {
-        name: "Nader Takruri",
-        role: "Co-Director",
-        image: "./naddy.jpg"
+        name: "Luke S.",
+        role: "Sponsorships Team",
+        image: "./team/luke_s.jpg",
+        link: "https://www.linkedin.com/in/luke-sanderson-/"
     },
     {
-        name: "Nader Takruri",
-        role: "Co-Director",
-        image: "./naddy.jpg"
+        name: "Sarah S.",
+        role: "Sponsorships Team",
+        image: "./team/sarah_s.jpg",
+        link: "https://www.linkedin.com/in/sarahssaad/"
     },
     {
-        name: "Nader Takruri",
-        role: "Co-Director",
-        image: "./naddy.jpg"
-    }, 
+        name: "Manoj M.",
+        role: "Sponsorships-Logistics Team",
+        image: "./team/manoj_m.jpg",
+        link: "https://www.linkedin.com/in/manojmanikandan/"
+    },  
     {
-        name: "Nader Takruri",
-        role: "Co-Director",
-        image: "./naddy.jpg"
-    }, 
-    {
-        name: "Nader Takruri",
-        role: "Co-Director",
-        image: "./naddy.jpg"
-    }, 
-    {
-        name: "Nader Takruri",
-        role: "Co-Director",
-        image: "./naddy.jpg"
-    }, 
-    {
-        name: "Nader Takruri",
-        role: "Co-Director",
-        image: "./naddy.jpg"
-    }, 
-    {
-        name: "Nader Takruri",
-        role: "Co-Director",
-        image: "./naddy.jpg"
-    }, 
-    {
-        name: "Nader Takruri",
-        role: "Co-Director",
-        image: "./naddy.jpg"
-    }, 
-    {
-        name: "Nader Takruri",
-        role: "Co-Director",
-        image: "./naddy.jpg"
-    }, 
-    {
-        name: "Nader Takruri",
-        role: "Co-Director",
-        image: "./naddy.jpg"
-    },
+        name: "Jacob G.",
+        role: "Dev Team",
+        image: "./team/jacob_g.jpg",
+        link: "https://www.linkedin.com/in/jaygee0/"
+    },  
 ]
 
 
