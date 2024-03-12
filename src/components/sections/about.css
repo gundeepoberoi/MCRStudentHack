@@ -19,4 +19,16 @@
   content: "";
   inset: 0;
   background: var(--temp-color);
+  z-index: 1000;
+}
+
+.about-overlay {
+  /* Generated from -- https://css-generators.com/custom-corners/ */
+  clip-path: polygon(0 80px,80px 0,calc(100% - 80px) 0,100% 80px,100% calc(100% - 80px),calc(100% - 80px) 100%,80px 100%,0 calc(100% - 80px));
+  background-color: rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
