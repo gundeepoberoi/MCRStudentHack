@@ -5,7 +5,7 @@ import Alt1 from "@/assets/logos/alt 1.svg";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <main className="flex min-h-screen flex-col items-center justify-between md:p-24 p-8">
       {/* <h1 className="text-6xl font-bold">MCRStudentHack</h1> */}
 
       <Alt1 className="transition ease-in-out delay-150 hover:scale-110" />

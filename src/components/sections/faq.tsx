@@ -56,10 +56,10 @@ export default function FAQ() {
 
   return (
     <section className="mt-48 w-full">
-      <div className="flex flex-wrap w-full text-white">
+      <div className="flex flex-wrap w-full text-white rounded-lg overflow-hidden">
         <div className={`${(selectedId >= 0) ? 'lg:w-5/12' : ''}
           w-full max-h-[40rem] overflow-auto scrollbar-hide
-          bg-black/30 pt-8`}>
+          bg-black/30 pt-8 transition-all`}>
          <h3 className="text-2xl text-center font-bold px-8 pb-4">Frequently Asked Questions</h3>
          {faqQuestions.map((faq, i) => {
            return (
@@ -76,7 +76,7 @@ export default function FAQ() {
            );
          })}
         </div>
-        <div className={`${(selectedId >= 0) ? 'lg:w-7/12' : 'hidden'} w-full bg-primary p-8`}>
+        <div className={`${(selectedId >= 0) ? 'lg:w-7/12' : 'hidden'} w-full bg-primary p-8 transition-all`}>
           <h3 className="text-2xl font-bold pb-4">Answer</h3>
           <p className="whitespace-pre-wrap">
             {selectedId >= 0 ? faqQuestions[selectedId].answer : ""}
