@@ -6,7 +6,8 @@
 
 
 about.tsx: 
-1. 
+1. Would it be possible to make the image and text in About have the same horizontal level? Right now, the image is slightly higher than the paragraph
+2. 
 
 
 schedule.tsx: 
