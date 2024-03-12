@@ -57,16 +57,16 @@ const ScheduleHeader = ({
 const ScheduleLgScreenLayout = () => {
   return (
     <div className="hidden lg:grid lg:grid-cols-2 lg:gap-x-8">
-      <div className="absolute inset-0 h-full w-full bg-gradient-to-r from-blue-500 to-teal-500 transform scale-120 bg-red-500 rounded-full blur-3xl -z-10 opacity-60" />
+      <div className="absolute inset-0 h-full w-full bg-gradient-to-r from-blue-500 to-teal-500 transform scale-[1.10] rounded-full blur-3xl -z-1 opacity-60" />
       {scheduleList.map((day, index) => (
         <div key={day.date + index} className="flex flex-col">
-          <h3 className="text-2xl font-semibold tracking-tight">
+          <h3 className="text-2xl font-semibold tracking-tight z-10">
             <time dateTime={day.datetime}>{day.date}</time>
           </h3>
-          <p className="mt-1.5 text-base tracking-tight">{day.desc}</p>
+          <p className="mt-1.5 text-base tracking-tight z-10">{day.desc}</p>
 
-          <Card className="mt-10 space-y-8 bg-gray-900 px-10 py-14 text-center flex flex-col grow isolate shadow-lg ring-1 ring-black/5 border-none backdrop-blur-sm text-white overflow-hidden">
-            <Meteors number={20} className="bg-[#18D1D4]" />
+          <Card className="mt-10 space-y-8 bg-gray-950 px-10 py-14 text-center flex flex-col grow isolate shadow-lg ring-1 ring-black/5 border-none backdrop-blur-sm text-white overflow-hidden">
+            <Meteors number={20} className="bg-[#18D1D4] z-10" />
             <CardContent>
               <ol role="list" className="space-y-8">
                 {day.events.map((event, index) => (
