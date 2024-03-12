@@ -7,14 +7,14 @@ function AboutTrophy(props: {
   return (
     <div className="text-center w-24 md:w-36">
       <Image className="border-solid border-2 mx-auto mb-2" src=""
-        width="100" height="100" alt="trophy" />
+        width="80" height="80" alt="trophy" />
       <p className="text-xs">{props.year}</p>
-      {props.events.map((event: {title: string, attendees: string}) => {
+      {props.events.map((event: {title: string, attendees: string}, i) => {
         return (
-          <>
+          <div key={`trophy-event-${i}`}>
             <p className="text-xs font-bold break-words">{event.title}</p>
             <p className="text-xs">- {event.attendees} attendees</p>
-          </>
+          </div>
         );
       })}
     </div>
@@ -27,7 +27,7 @@ export default function About() {
       <div className="about-wrapper min-w-xl px-8 md:px-16 py-8">
         <div className="about-overlay"></div>
         <h1 className="text-5xl ml-8">About</h1>
-        <div className="flex flex-wrap items-start mt-8">
+        <div className="flex flex-wrap items-center mt-8">
           <div className="w-full lg:w-5/12 h-auto border-solid border-2">
             <Image className="w-full" width="480" height="320" src="" alt="placeholder" />
           </div>
@@ -38,7 +38,7 @@ export default function About() {
             </p>
           </div>
         </div>
-        <div className="flex flex-wrap justify-center gap-16 py-16">
+        <div className="flex flex-wrap justify-center gap-4 py-16">
           <AboutTrophy year="2023" events={[{title:"GreatUniHack", attendees:"200"}]} />
           <AboutTrophy year="2022" events={[{title:"GreatUniHack", attendees:"168"}]} />
           <AboutTrophy year="2021" events={[{title:"First Online GreatUniHack", attendees:"117"}, {title:"First Online StudentHack", attendees:"96"}]} />
