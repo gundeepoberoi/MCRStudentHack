@@ -29,8 +29,7 @@ export default function Home() {
         {/* <Alt1 className="bg-gray-100 transition ease-in-out delay-150 hover:scale-110 content-center" /> */}
         {/* <About /> */}
         {/* <Schedule /> */}
-      <Team />
-      <Helmet />
+        <Team />
         <FAQ />
       </div>
       
