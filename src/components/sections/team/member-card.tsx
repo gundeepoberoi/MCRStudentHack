@@ -38,7 +38,7 @@ export default function Member( {name, role, image, link }: any ) {
                         <BackgroundGradient animate={false} className='grid place-items-center w-40 h-40 md:w-60 md:h-60 rounded-3xl '>                
                             <div className="flex flex-col items-center">
                                 <div className="relative aspect-square object-center h-[9rem] overflow-hidden">
-                                <div className="absolute inset-7 inset-x-9 rounded-full overflow-hidden size-[5rem] object-center" style={{ backgroundImage: `url("${image}")`, backgroundSize: "100% 100%", backgroundRepeat: "no-repeat" }} />
+                                <div className="absolute inset-6 inset-x-[1.95rem] rounded-full overflow-hidden size-[5rem] object-center" style={{ backgroundImage: `url("${image}")`, backgroundSize: "100% 100%", backgroundRepeat: "no-repeat" }} />
 
                                     <img
                                         src={"./helmet.svg"}
