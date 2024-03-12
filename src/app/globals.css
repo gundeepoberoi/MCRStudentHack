@@ -34,7 +34,7 @@
 
     --radius: 0.5rem;
 
-    --sh-background: 213 95% 9%;
+    --sh-background: 221 39% 11%;
     --sh-foreground: 210 40% 98%;
     --sh-primary: 178 18% 71%;
     --sh-secondary: 190 49% 37%;
@@ -81,4 +81,23 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #8f929374;
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #ffffffa0;
 }
