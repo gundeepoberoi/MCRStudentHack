@@ -26,7 +26,7 @@ export default function Home() {
         />
       </div>
       <div className="flex min-h-screen flex-col items-center justify-center p-24 relative" >
-        {/* <Alt1 className="bg-gray-100 transition ease-in-out delay-150 hover:scale-110 content-center" /> */}
+        <Alt1 className="transition ease-in-out delay-150 hover:scale-110 content-center" />
         <About />
         <Schedule />
         <Team />
