@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import SmoothScroller from "@/components/sections/Lenis";
+// import SmoothScroller from "@/components/sections/Lenis";
 //import { Providers } from '@/components/sections/providers';
 
 
