@@ -36,8 +36,8 @@ export default function Home() {
           {/* <Alt1 className="transition ease-in-out delay-150 hover:scale-110 content-center" /> */}
           <About />
           <Schedule/>
-          <Team />
           <FAQ />
+          <Team />
         </main>
       </LazyMotion>
     </>

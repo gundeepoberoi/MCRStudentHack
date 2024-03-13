@@ -55,12 +55,13 @@ export default function FAQ() {
   const [selectedId, setSelectedId] = useState(-1);
 
   return (
-    <section id="faq" className="mt-48 w-full">
+    <section id="faq" className="mt-48 w-full z-20">
       <div className="flex flex-wrap w-full text-white rounded-lg overflow-hidden">
         <div className={`${(selectedId >= 0) ? 'lg:w-5/12' : ''}
           w-full max-h-[40rem] overflow-auto scrollbar-hide
           bg-black/30 pt-8 transition-all`}>
-         <h3 className="text-2xl text-center font-bold px-8 pb-4">Frequently Asked Questions</h3>
+        
+          <h2 className="font-display text-4xl font-medium tracking-tighter text-white sm:text-5xl text-center">Frequently Asked Questions</h2>
          {faqQuestions.map((faq, i) => {
            return (
              <div key={`faq-q-${i}`}

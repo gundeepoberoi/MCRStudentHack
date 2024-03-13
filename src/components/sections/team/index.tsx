@@ -8,8 +8,10 @@ import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
 export default function Team() {
   const members_split = getSplitMembers();
   return (
-    <section id="team" className="overflow-x-hidden w-full z-10">
-      <h1 className="flex justify-center md:text-6xl text-5xl">Our Crew</h1>
+    <section id="team" className="overflow-x-hidden w-full z-10 mt-8">
+        <h2 className="font-display text-4xl font-medium tracking-tighter text-white sm:text-5xl text-center">
+          Our Crew
+        </h2>
         <div className="container hidden sm:block">
           <div className="mt-10 rounded-md flex flex-col antialiased items-center justify-self-center">
             <InfiniteMovingCards speed="slow" direction="right" className="w-[90%] overflow-x-hidden">
