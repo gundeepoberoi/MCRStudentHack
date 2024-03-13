@@ -40,7 +40,7 @@ export default function Home() {
               </div>
               <div className="flex flex-col items-center justify-center lg:mt-[-20vh] ">
                 <form action="https://apply.mcrstudenthack.com/?r=apply">
-                  <Button type="submit">Register Now</Button>
+                  <Button type="submit" >Register Now</Button>
                 </form>
               </div>
             </div>
