@@ -11,8 +11,8 @@ export default function Member( {name, role, image, link }: any ) {
             <a className='hidden sm:block' href={link}>
                 <BackgroundGradient animate={false} className='grid place-items-center size-60 rounded-3xl '>
                     <div className="flex flex-col items-center w-40">
-                        <div className="relative rounded-full aspect-square object-center h-40 overflow-hidden">
-                            <div className="absolute inset-7 inset-x-9 rounded-full overflow-hidden size-[5.5rem] object-center" style={{ backgroundImage: `url("${image}")`, backgroundSize: "100% 100%", backgroundRepeat: "no-repeat" }} />
+                        <div className="relative rounded-full aspect-square object-center h-40">
+                            <div className="absolute inset-7 inset-x-9 rounded-full size-[5.5rem] object-center" style={{ backgroundImage: `url("${image}")`, backgroundSize: "100% 100%", backgroundRepeat: "no-repeat" }} />
                             <Helmet
                                     style={{
                                         objectFit: "cover",
@@ -24,21 +24,21 @@ export default function Member( {name, role, image, link }: any ) {
                         </div>
 
 
-                        <p className='mt-2 text-md font-semibold text-accent'>{name}</p>
-                        <p className='text-xs font-light text-center'>{role}</p>
+                        <p className='mt-2 text-lg font-semibold text-accent text-center'>{name}</p>
+                        <p className='text-sm font-regular text-center'>{role}</p>
                     </div>
 
                 </BackgroundGradient>
             </a>
 
-            <div className='sm:hidden m-4'>
+            <div className='sm:hidden m-2'>
                 <CardFlip
-                    className='w-40 h-40'
+                    className='size-[9rem]'
                     childrenFront={    
-                        <BackgroundGradient animate={false} className='grid place-items-center w-40 h-40 md:w-60 md:h-60 rounded-3xl '>                
+                        <BackgroundGradient animate={false} className='grid place-items-center size-[9rem] rounded-3xl '>                
                             <div className="flex flex-col items-center">
-                                <div className="relative aspect-square object-center h-[9rem] overflow-hidden">
-                                <div className="absolute inset-6 inset-x-[1.95rem] rounded-full overflow-hidden size-[5rem] object-center" style={{ backgroundImage: `url("${image}")`, backgroundSize: "100% 100%", backgroundRepeat: "no-repeat" }} />
+                                <div className="relative aspect-square object-center h-[9rem]">
+                                <div className="absolute inset-6 inset-x-[1.95rem] rounded-full size-[5rem] object-center" style={{ backgroundImage: `url("${image}")`, backgroundSize: "100% 100%", backgroundRepeat: "no-repeat" }} />
 
                                     <img
                                         src={"./helmet.svg"}
@@ -57,10 +57,10 @@ export default function Member( {name, role, image, link }: any ) {
                         </BackgroundGradient>
                     }
                     childrenBack={
-                        <BackgroundGradient animate={false} className='grid place-items-center w-40 h-40 md:w-60 md:h-60 rounded-3xl '>    
-                            <div className='grid place-items-center mr-1'>
-                                <p className='mt-2 text-md font-semibold text-accent z-20'>{name}</p>
-                                <p className='text-xs font-light text-center'>{role}</p>
+                        <BackgroundGradient animate={false} className='grid place-items-center size-[9rem] rounded-3xl '>    
+                            <div className='grid place-items-center mr-4 m-2'>
+                                <p className='mt-2 text-lg font-semibold text-accent text-center'>{name}</p>
+                                <p className='text-sm font-regular text-center m-1'>{role}</p>
 
                                 {link != null &&
                                     <Link href={link}>

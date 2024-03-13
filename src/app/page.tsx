@@ -27,9 +27,9 @@ export default function Home() {
               particleColor="#FFFFFF"
             />
           </div>
-          <Alt1 className="transition ease-in-out delay-150 hover:scale-110 content-center" />
+          {/* <Alt1 className="transition ease-in-out delay-150 hover:scale-110 content-center" /> */}
           <About />
-          <Schedule />
+          <Schedule/>
           <Team />
           <FAQ />
         </main>
