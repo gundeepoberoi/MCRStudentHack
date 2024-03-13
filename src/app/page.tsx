@@ -33,8 +33,8 @@ export default function Home() {
               particleColor="#FFFFFF"
             />
           </div>
-          <div className="flex min-h-screen flex-col items-center justify-center p-4 sm:p-24 relative">
-            <div className="grid grid-cols-1 sm:grid-cols-2 w-screen gap-1">
+          <div className="flex min-h-screen w-full flex-col items-center justify-center p-4 sm:p-24 relative">
+            <div className="grid grid-cols-1 min-[950px]:grid-cols-2 w-full gap-1">
               <div className="flex items-center justify-center">
                 <Alt1 className="w-full transition ease-in-out delay-150 hover:scale-110 content-center lg:mt-[-20vw] lg:ml-[-10vw]" />
               </div>
