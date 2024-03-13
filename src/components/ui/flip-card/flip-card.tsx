@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import "./flip-card.css";
 
 export const CardFlip = ({
@@ -24,7 +24,7 @@ export const CardFlip = ({
   return (
     <div className={className}>
       <div className="flip-card rounded-md" onClick={handleFlip}>
-        <motion.div
+        <m.div
           className="flip-card-inner w-[100%] h-[100%]"
           initial={false}
           animate={{ rotateY: isFlipped ? 180 : 360 }}
@@ -36,7 +36,7 @@ export const CardFlip = ({
           </div>
 
           <div className="flip-card-back w-[100%] h-[100%]">{childrenBack}</div>
-        </motion.div>
+        </m.div>
       </div>
     </div>
   );
