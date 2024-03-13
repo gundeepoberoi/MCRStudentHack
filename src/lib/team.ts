@@ -22,6 +22,24 @@ const members: Member[] = [
         link: "https://www.linkedin.com/in/nadoms/",
     },
     {
+        name: "Gundeep O.",
+        role: "Deputy Director and Dev Team Lead",
+        image: "./team/gundeep_o.jpg",
+        link: "https://www.linkedin.com/in/gundeepoberoi/"
+    },  
+    {
+        name: "Hanin S.",
+        role: "PR and Graphics Team Lead",
+        image: "./team/hanin_s.png",
+        link: "https://www.linkedin.com/in/haninsofia/"
+    }, 
+    {
+        name: "Insiya M.",
+        role: "Logistics Team Lead",
+        image: "./team/insiya_m.jpg",
+        link: "https://www.linkedin.com/in/insiya-mullamitha/"
+    }, 
+    {
         name: "Sam M.",
         role: "Sponsorship Team",
         image: "./team/sam_m.jpg",
@@ -51,18 +69,6 @@ const members: Member[] = [
         link: "https://www.linkedin.com/in/yat-long-poon/"
     }, 
     {
-        name: "Insiya M.",
-        role: "Logistics Team",
-        image: "./team/insiya_m.jpg",
-        link: "https://www.linkedin.com/in/insiya-mullamitha/"
-    }, 
-    {
-        name: "Hanin S.",
-        role: "PR-Graphics Team",
-        image: "./team/hanin_s.png",
-        link: "https://www.linkedin.com/in/haninsofia/"
-    }, 
-    {
         name: "Luke S.",
         role: "Sponsorships Team",
         image: "./team/luke_s.jpg",
@@ -86,6 +92,13 @@ const members: Member[] = [
         image: "./team/jacob_g.jpg",
         link: "https://www.linkedin.com/in/jaygee0/"
     },  
+    {
+        name: "Yashasvi N.",
+        role: "Logistics Team",
+        image: "./team/yashasvi_n.png",
+        link: "http://linkedin.com/in/yashasvi-nandamuri-a1a21b280/"
+    },  
+
 ]
 
 
