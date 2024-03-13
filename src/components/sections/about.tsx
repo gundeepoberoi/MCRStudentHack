@@ -1,12 +1,17 @@
 import Image from "next/image";
 import "./about.css";
 
+import Image0 from "@/assets/images/about-image-0.jpg";
+import Image1 from "@/assets/images/about-image-1.jpg";
+import Image2 from "@/assets/images/about-image-2.jpg";
+import TrophyImg from "@/assets/images/about-trophy.png";
+
 function AboutTrophy(props: {
     year: string, events: {title: string, attendees: string}[],
 }) {
   return (
     <div className="text-center w-24 md:w-36">
-      <Image className="border-solid border-2 mx-auto mb-2" src=""
+      <Image className="mx-auto mb-2" src={TrophyImg}
         width="80" height="80" alt="trophy" />
       <p className="text-xs">{props.year}</p>
       {props.events.map((event: {title: string, attendees: string}, i) => {
@@ -27,11 +32,15 @@ export default function About() {
       <div className="about-wrapper min-w-xl px-8 md:px-16 py-8">
         <div className="about-overlay"></div>
         <h1 className="text-5xl ml-8">About</h1>
-        <div className="flex flex-wrap items-center mt-8">
-          <div className="w-full lg:w-5/12 h-auto border-solid border-2">
-            <Image className="w-full" width="480" height="320" src="" alt="placeholder" />
+        <div className="flex flex-wrap items-stretch mt-8">
+          <div className="w-full xl:w-5/12">
+            <div className="max-w-[30rem] min-h-[20rem] mx-auto relative">
+              <Image className="w-1/2 absolute top-0" src={Image0} alt="placeholder" />
+              <Image className="w-1/2 absolute bottom-0" src={Image1} alt="placeholder" />
+              <Image className="w-1/2 absolute right-4 bottom-1/2 translate-y-1/2" src={Image2} alt="placeholder" />
+            </div>
           </div>
-          <div className="w-full lg:w-7/12 pt-4 lg:pl-8 lg:pt-0">
+          <div className="w-full xl:w-7/12 pt-8 xl:pl-8 xl:pt-0">
             <p className="text-lg">
             We are a part of UniCS, the Computer Science Society at the esteemed University of Manchester. Our mission is to foster unity among students through a diverse array of student-led events; our hackathons stand out as our flagship offerings, widely celebrated within our community.
             Especially with our latest success in October, GreatUniHack2023, we take pride in the memories we can create for students and the projects that our talented students can create for the world. We continue to plan and execute 1-2 major hackathons a year, here in the heart of Manchester.
