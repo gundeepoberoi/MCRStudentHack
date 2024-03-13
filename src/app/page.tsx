@@ -5,12 +5,7 @@ import Schedule from "@/components/sections/schedule";
 import Team from "@/components/sections/team";
 
 import { SparklesCore } from "@/components/ui/sparkles";
-import { FloatingNav } from "@/components/ui/floating-navbar";
-
-import Alt1 from "@/assets/logos/alt 1.svg";
-
 import { LazyMotion } from "framer-motion";
-import { FaFirefox } from "react-icons/fa";
 import Navbar from "@/components/sections/navbar";
 
 
