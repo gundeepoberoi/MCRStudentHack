@@ -29,7 +29,9 @@ export default function Home() {
             <Alt1 className="w-full transition ease-in-out delay-150 hover:scale-110 content-center lg:mt-[-20vw] lg:ml-[-10vw]" />
           </div>
           <div className="flex flex-col items-center justify-center lg:mt-[-20vh] ">
-              <Button>Register Now</Button>
+          <form action="https://apply.mcrstudenthack.com/?r=apply">
+              <Button type="submit">Register Now</Button>
+            </form>
           </div>
         </div>
         
