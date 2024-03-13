@@ -58,7 +58,7 @@ export default function Home() {
         {/* <FAQ /> */}
         
       </div>
-      <Footer /> 
+      {/* <Footer />  */}
          
   </main>
   </LazyMotion>
