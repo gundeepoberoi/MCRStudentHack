@@ -3,12 +3,12 @@ import About from "@/components/sections/about";
 import FAQ from "@/components/sections/faq";
 import Schedule from "@/components/sections/schedule";
 
-import { SparklesCore } from "@/components/sections/sparkles";
-import { TimerContainer } from '@/components/sections/TimerContainer';
+import { SparklesCore } from "@/components/ui/sparkles";
+import { TimerContainer } from '@/components/ui/TimerContainer';
 import Team from "@/components/sections/team";
 import Alt1 from "@/assets/logos/alt 1.svg";
-import { Button, MovingBorder } from "@/components/sections/moving-border";
-import { TypewriterEffectSmooth } from "@/components/sections/typewriter-effect";
+import { Button, MovingBorder } from "@/components/ui/moving-border";
+import { TypewriterEffectSmooth } from "@/components/ui/typewriter-effect";
 import Footer from "@/components/footer/footer";
 
 import { LazyMotion } from "framer-motion";
@@ -20,7 +20,7 @@ export default function Home() {
     <>    
     <LazyMotion features={loadFeatures}>    
     <main className="flex min-h-screen bg-black flex-col items-center justify-center p-4 sm:p-24 relative" >
-      <!-- <main className="flex min-h-screen flex-col items-center justify-between md:p-24 p-8 relative"> -->
+      {/* <!-- <main className="flex min-h-screen flex-col items-center justify-between md:p-24 p-8 relative"> --> */}
       <div className="w-full h-full absolute inset-0"></div>
         <div className="w-full h-full absolute inset-0">
           <SparklesCore
