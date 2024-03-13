@@ -2,13 +2,12 @@ import About from "@/components/sections/about";
 import FAQ from "@/components/sections/faq";
 import Schedule from "@/components/sections/schedule";
 import { SparklesCore } from "@/components/sections/sparkles";
-
+import { TimerContainer } from '@/components/sections/TimerContainer';
 import Alt1 from "@/assets/logos/alt 1.svg";
 
 export default function Home() {
   return (
-    
-    <main className="flex min-h-screen bg-black flex-col items-center justify-center p-24 relative">
+    <main className="flex min-h-screen bg-black flex-col items-center justify-center p-24 relative" >
       {/* <h1 className="text-6xl font-bold">MCRStudentHack</h1> */}
       <div className="w-full h-full absolute inset-0">
         <SparklesCore
@@ -21,13 +20,16 @@ export default function Home() {
           particleColor="#FFFFFF"
         />
       </div>
-      <div className="flex min-h-screen flex-col items-center justify-center p-24 relative" >
-        <Alt1 className="transition ease-in-out delay-150 hover:scale-110 content-center" />
+      <div className="flex min-h-screen flex-col items-center justify-center p-24 relative">
+        <Alt1 className="transition ease-in-out delay-150 hover:scale-110 content-center mt-[-30vh]" />
+        <div className="mt-[-30vh]" suppressHydrationWarning={true}>
+        <TimerContainer currentDate={new Date()}/>
+        </div>
+
         <About />
         <Schedule />
         <FAQ />
       </div>
-      
     </main>
   );
 }

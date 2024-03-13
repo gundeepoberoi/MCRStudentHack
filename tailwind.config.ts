@@ -74,11 +74,19 @@ const config = {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
+        flip: {
+          'from': { transform:'rotateX(0deg)', transformOrigin: '50% bottom ',},
+          'to':{transform: 'rotateX(180deg)', transformOrigin: '50% bottom ',}
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "flip":"flip 1s cubic-bezier(0, 0, 0.2, 1) infinite",
       },
+    },
+    fontFamily: {
+      'redhat':['Red Hat Text', 'sans-serif'],
     },
   },
   plugins: [require("tailwindcss-animate")],
