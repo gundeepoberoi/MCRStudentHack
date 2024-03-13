@@ -55,7 +55,7 @@ export default function FAQ() {
   const [selectedId, setSelectedId] = useState(-1);
 
   return (
-    <section id="faq" className="mt-48 w-full z-50">
+    <section id="faq" className="mt-48 mb-24 w-full z-10">
       <div className="flex flex-wrap w-full text-white rounded-lg overflow-hidden">
         <div
           className={`${selectedId >= 0 ? "lg:w-5/12" : ""}
