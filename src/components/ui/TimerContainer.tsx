@@ -12,7 +12,7 @@ interface TimeProps {
 
 export const TimerContainer = ({ currentDate }: { currentDate: Date }) => {
     
-    const targetDate = new Date('2024-03-29T23:59:59');
+    const targetDate = new Date('2024-03-27T23:59:59');
 
     const timeDifference = targetDate.getTime() - currentDate.getTime();
     const initialDays = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
