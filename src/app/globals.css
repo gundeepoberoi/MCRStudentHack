@@ -36,7 +36,7 @@
 
     --radius: 0.5rem;
 
-    --sh-background: 213 95% 9%;
+    --sh-background: 221 39% 11%;
     --sh-foreground: 210 40% 98%;
     --sh-primary: 178 18% 71%;
     --sh-secondary: 190 49% 37%;
@@ -85,20 +85,22 @@
   }
 }
 
-/* .wrapperBackground {
- overflow-y: auto;
- overflow-x: hidden;
- perspective: 1000px;
- height: 500vh;
- position: relative;
- over
+
+::-webkit-scrollbar {
+  width: 20px;
 }
 
-.sparklesParallax {
-  transform: translateZ(-100000px) scale(100);
+::-webkit-scrollbar-track {
+  background-color: transparent;
 }
 
-.foregroundParallax {
-  transform: translateZ(-10000px) scale(10);
-  top: -90vh;
-} */
+::-webkit-scrollbar-thumb {
+  background-color: #8f929374;
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #ffffffa0;
+}
