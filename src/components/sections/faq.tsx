@@ -55,7 +55,7 @@ export default function FAQ() {
   const [selectedId, setSelectedId] = useState(-1);
 
   return (
-    <section className="mt-48 w-full">
+    <section id="faq" className="mt-48 w-full">
       <div className="flex flex-wrap w-full text-white rounded-lg overflow-hidden">
         <div className={`${(selectedId >= 0) ? 'lg:w-5/12' : ''}
           w-full max-h-[40rem] overflow-auto scrollbar-hide

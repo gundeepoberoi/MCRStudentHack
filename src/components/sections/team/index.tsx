@@ -36,14 +36,17 @@ export default function Team() {
           </div>
         </div>
 
-        <div className="container w-screen sm:hidden mt-10 rounded-md grid grid-cols-1 min-[375px]:grid-cols-2 gap-2 antialiased items-center justify-center">
-            {Members.map((member, index) => {
-                return (
-                <div key={index} className="justify-self-center row-auto">
-                    <Member {...member} />
-                </div>
-                );
-            })}
+        <div className="sm:hidden">
+            <div className="rounded-md grid grid-cols-1 min-[375px]:grid-cols-2 gap-4">
+                {Members.map((member, index) => {
+                    return (
+                    <div key={index} className="justify-self-center row-auto">
+                        <Member {...member} />
+                    </div>
+                    );
+                })}
+            </div>
+
         </div>
     </section>
   );
