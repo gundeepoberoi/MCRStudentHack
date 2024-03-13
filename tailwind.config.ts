@@ -1,4 +1,7 @@
 import type { Config } from "tailwindcss";
+
+const defaultTheme = require("tailwindcss/defaultTheme");
+const colors = require("tailwindcss/colors");
 const {
   default: flattenColorPalette,
 } = require("tailwindcss/lib/util/flattenColorPalette");
@@ -82,15 +85,29 @@ const config = {
             transform: "translate(calc(-50% - 0.5rem))",
           },
         },
+        flip: {
+          'from': { transform:'rotateX(0deg)', transformOrigin: '50% bottom ',},
+          'to':{transform: 'rotateX(180deg)', transformOrigin: '50% bottom ',}
+        },
       },
       animation: {
+        "accordion-down": "accordion-down 0.2s ease-out",
+        "accordion-up": "accordion-up 0.2s ease-out",
+        "flip":"flip 1s cubic-bezier(0, 0, 0.2, 1) infinite",
+
         "meteor-effect": "meteor 5s linear infinite",
         scroll:
           "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
       },
     },
+    fontFamily: {
+      'redhat':['Red Hat Text', 'sans-serif'],
+    },
   },
-  plugins: [require("tailwindcss-animate"), addVariablesForColors],
+
+  plugins: [require("tailwindcss-animate"), 
+            addVariablesForColors
+          ],
 } satisfies Config;
 
 function addVariablesForColors({ addBase, theme }: any) {
@@ -105,3 +122,4 @@ function addVariablesForColors({ addBase, theme }: any) {
 }
 
 export default config;
+
