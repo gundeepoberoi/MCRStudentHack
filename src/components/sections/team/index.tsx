@@ -41,7 +41,7 @@ export default function Team() {
                     </div>
 
                     <div className="container sm:hidden">
-                        <div className="mt-10 rounded-md grid grid-cols-1 min-[400px]:grid-cols-2 gap-2 antialiased items-center justify-center">
+                        <div className="mt-10 rounded-md grid grid-cols-1 min-[480px]:grid-cols-2 gap-2 antialiased items-center justify-center">
                             {/* <ul> */}
                             {Members.map((member, index) => {
                                     return (
