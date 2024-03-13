@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import {
-  motion,
+  m,
   useAnimationFrame,
   useMotionTemplate,
   useMotionValue,
@@ -32,7 +32,7 @@ export function Button({
   return (
     <Component
       className={cn(
-        "bg-transparent relative text-xl  h-20 w-60 p-[1px] overflow-hidden ",
+        "bg-transparent relative text-xl h-20 w-60 p-[1px] overflow-hidden ",
         containerClassName
       )}
       style={{
@@ -123,7 +123,7 @@ export const MovingBorder = ({
           ref={pathRef}
         />
       </svg>
-      <motion.div
+      <m.div
         style={{
           position: "absolute",
           top: 0,
@@ -133,7 +133,7 @@ export const MovingBorder = ({
         }}
       >
         {children}
-      </motion.div>
+      </m.div>
     </>
   );
 };
