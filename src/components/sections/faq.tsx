@@ -55,11 +55,11 @@ export default function FAQ() {
   const [selectedId, setSelectedId] = useState(-1);
 
   return (
-    <section className="mt-48 w-full">
+    <section className="mt-48 w-full z-50">
       <div className="flex flex-wrap w-full text-white rounded-lg overflow-hidden">
         <div className={`${(selectedId >= 0) ? 'lg:w-5/12' : ''}
-          w-full max-h-[40rem] overflow-auto scrollbar-hide
-          bg-black/30 pt-8 transition-all`}>
+          w-full max-h-[40rem] overflow-auto scrollbar-hide backdrop-blur-sm
+          pt-8 transition-all`}>
          <h3 className="text-2xl text-center font-bold px-8 pb-4">Frequently Asked Questions</h3>
          {faqQuestions.map((faq, i) => {
            return (
@@ -69,6 +69,9 @@ export default function FAQ() {
                ${(selectedId === i) ? 'bg-accent/30' : ''}`}
                onClick={() => {
                  setSelectedId(i === selectedId ? -1 : i);
+                 const answerDiv = document.getElementById("faq-answer");
+                 if (answerDiv !== null)
+                   answerDiv.scrollIntoView();
                }}>
               <h3 className="text-lg">{i+1}. {faq.question}</h3>
               <h3 className="text-xl">&#8250;</h3>
@@ -76,7 +79,9 @@ export default function FAQ() {
            );
          })}
         </div>
-        <div className={`${(selectedId >= 0) ? 'lg:w-7/12' : 'hidden'} w-full bg-primary p-8 transition-all`}>
+        <div id="faq-answer" className={`${(selectedId >= 0) ?
+          'w-full opacity-100 lg:w-7/12' : 'w-0 opacity-0 hidden'}
+          bg-transparent backdrop-blur p-8 transition-all`}>
           <h3 className="text-2xl font-bold pb-4">Answer</h3>
           <p className="whitespace-pre-wrap">
             {selectedId >= 0 ? faqQuestions[selectedId].answer : ""}
