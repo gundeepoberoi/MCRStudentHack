@@ -19,7 +19,8 @@ const Hero = () => {
             <Alt1 className="w-full transition ease-in-out delay-150 hover:scale-110 content-center" />
           </div>
           <div className="flex flex-col items-center justify-center">
-            <form action="https://apply.mcrstudenthack.com/?r=apply">
+            <form action="https://apply.mcrstudenthack.com/">
+              <input type="hidden" name="r" id="r" value="apply" />
               <Button type="submit">Register Now</Button>
             </form>
           </div>
