@@ -21,7 +21,6 @@ export default function Home() {
       <LazyMotion features={loadFeatures}>
         <main className="flex min-h-screen bg-black flex-col items-center justify-center p-4 sm:p-24 relative" >
           {/* <!-- <main className="flex min-h-screen flex-col items-center justify-between md:p-24 p-8 relative"> --> */}
-          <div className="w-full h-full absolute inset-0"></div>
           <div className="w-full h-full absolute inset-0">
             <SparklesCore
               id="tsparticlesfullpage"
