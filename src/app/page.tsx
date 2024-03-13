@@ -5,6 +5,7 @@ import { SparklesCore } from "@/components/sections/sparkles";
 import { TimerContainer } from '@/components/sections/TimerContainer';
 import Alt1 from "@/assets/logos/alt 1.svg";
 import { Button, MovingBorder } from "@/components/sections/moving-border";
+import { TypewriterEffectSmooth } from "@/components/sections/typewriter-effect";
 
 export default function Home() {
   return (
@@ -30,7 +31,19 @@ export default function Home() {
               <Button>Register Now</Button>
           </div>
         </div>
+        
         <div className="xl:mt-[-30vh]" suppressHydrationWarning={true}>
+        <TypewriterEffectSmooth className="xl:mt-[+20vh] mt-[+10vh] xl:mb-[-20vh] mb-[-10vh] justify-center" words={[
+                                                {
+                                                  text: "Registration",
+                                                  className: "text-cyan-100"
+                                                },
+                                                {
+                                                  text: "Closes in:",
+                                                  className: "text-cyan-300"
+                                                },
+                                                
+                                              ]} />
               <TimerContainer currentDate={new Date()} />
             </div>
         <About />
