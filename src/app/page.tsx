@@ -28,11 +28,11 @@ export default function Home() {
             />
           </div>
           <Hero />
-          <About />
-          <Schedule />
-          <Team />
-          <FAQ />
-          <Footer />
+          {/* <About /> */}
+          {/* <Schedule /> */}
+          {/* <Team /> */}
+          {/* <FAQ /> */}
+          {/* <Footer /> */}
         </main>
       </LazyMotion>
     </>
