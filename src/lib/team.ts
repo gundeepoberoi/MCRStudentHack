@@ -1,5 +1,4 @@
 import { StaticImageData } from 'next/image';
-import astronaut from '@/app/astronaut.png';
 
 interface Member {
     name: string;
