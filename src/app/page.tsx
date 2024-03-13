@@ -22,7 +22,7 @@ export default function Home() {
         <main className="flex min-h-screen bg-black flex-col items-center justify-center p-4 sm:p-24 relative" >
           {/* <!-- <main className="flex min-h-screen flex-col items-center justify-between md:p-24 p-8 relative"> --> */}
           {/* <div className="w-full h-full absolute inset-0"></div> */}
-          <div className="w-full h-full absolute inset-0">
+          <div className="w-screen h-screen fixed inset-0 overflow-hidden">
             <SparklesCore
               id="tsparticlesfullpage"
               background="transparent"
@@ -39,7 +39,8 @@ export default function Home() {
                 <Alt1 className="w-full transition ease-in-out delay-150 hover:scale-110 content-center lg:mt-[-20vw] lg:ml-[-10vw]" />
               </div>
               <div className="flex flex-col items-center justify-center lg:mt-[-20vh] ">
-                <form action="https://apply.mcrstudenthack.com/?r=apply">
+                <form action="https://apply.mcrstudenthack.com/">
+                  <input type="hidden" name="r" id="r" value="apply" />
                   <Button type="submit" >Register Now</Button>
                 </form>
               </div>
@@ -59,7 +60,7 @@ export default function Home() {
             {/* <FAQ /> */}
 
           </div>
-          <Footer /> 
+          {/* <Footer />  */}
 
         </main>
       </LazyMotion>
