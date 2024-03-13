@@ -14,8 +14,6 @@ export const TimerContainer = ({ currentDate }: { currentDate: Date }) => {
     
     const targetDate = new Date('2024-03-29T23:59:59');
 
-    console.log(targetDate.getTime(),  currentDate.getTime());
-
     const timeDifference = targetDate.getTime() - currentDate.getTime();
     const initialDays = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
     const initialHours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
