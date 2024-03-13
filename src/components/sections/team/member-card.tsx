@@ -49,7 +49,7 @@ export default function Member( {name, role, image, link }: any ) {
                                             width: "9rem",
                                             zIndex: 1,
                                         }}
-                                        className="w-auto aspect-square object-center absolute inset-0"                                    />
+                                        className="w-auto aspect-square object-center absolute inset-0"/>
                                 </div>
                             </div>
 
@@ -57,19 +57,22 @@ export default function Member( {name, role, image, link }: any ) {
                         </BackgroundGradient>
                     }
                     childrenBack={
-                        <BackgroundGradient animate={false} className='grid place-items-center w-40 h-40 md:w-60 md:h-60 rounded-3xl '>                
-                            <p className='mt-2 text-md font-semibold text-accent z-20'>{name}</p>
-                            <p className='text-xs font-light text-center'>{role}</p>
+                        <BackgroundGradient animate={false} className='grid place-items-center w-40 h-40 md:w-60 md:h-60 rounded-3xl '>    
+                            <div className='grid place-items-center mr-1'>
+                                <p className='mt-2 text-md font-semibold text-accent z-20'>{name}</p>
+                                <p className='text-xs font-light text-center'>{role}</p>
 
-                            {link != null &&
-                                <Link href={link}>
-                                    <FaLinkedin size={30} />
-                                </Link>
-                            }
+                                {link != null &&
+                                    <Link href={link}>
+                                        <FaLinkedin size={30} />
+                                    </Link>
+                                }
 
-                            {link == null &&
-                                <div  className='size-8'/> // Put space so the text is somewhat aligned like the rest 
-                            }
+                                {link == null &&
+                                    <div  className='size-8'/> // Put space so the text is somewhat aligned like the rest 
+                                }
+                            </div>            
+
                            
                         </BackgroundGradient>
 
