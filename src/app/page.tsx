@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <>
       <LazyMotion features={loadFeatures}>
-        <main className="flex min-h-screen flex-col items-center justify-between sm:p-8 p-24 relative">
+        <main className="flex min-h-screen flex-col items-center justify-between p-8 md:p-24 relative">
           <div className="w-screen h-screen fixed inset-0 overflow-hidden">
             <SparklesCore
               id="tsparticlesfullpage"
@@ -28,11 +28,11 @@ export default function Home() {
             />
           </div>
           <Hero />
-          {/* <About /> */}
-          {/* <Schedule /> */}
-          {/* <Team /> */}
-          {/* <FAQ /> */}
-          {/* <Footer /> */}
+          <About />
+          <Schedule />
+          <Team />
+          <FAQ />
+          <Footer />
         </main>
       </LazyMotion>
     </>
