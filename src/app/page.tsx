@@ -52,10 +52,10 @@ export default function Home() {
                                               ]} />
               <TimerContainer currentDate={new Date()} />
             </div>
-        <About />
-        <Schedule />
-        <Team />
-        <FAQ />
+        {/* <About /> */}
+        {/* <Schedule /> */}
+        {/* <Team /> */}
+        {/* <FAQ /> */}
         
       </div>
       <Footer /> 
