@@ -1,5 +1,7 @@
 import Link from 'next/link';
 import { FaLinkedin } from "react-icons/fa";
+import { IconContext } from "react-icons";
+
 import { CardFlip } from '@/components/ui/flip-card/flip-card';
 import Image from 'next/image';
 import { Card, CardContent } from '@/components/ui/card';
@@ -13,7 +15,7 @@ export default function Member({ name, role, image, link, flip }: any) {
 }
 function StillMember({ name, role, image, link }: any) {
     return (
-        <a className='w-full aspect-[3/4]' href={link}>
+        <Link className='w-full aspect-[3/4]' href={link} target="_LINK" rel="noreferrer">
             <Card className='w-full h-full relative group bg-zinc-900/5 rounded-3xl z-[1] border-none ring-2 ring-slate-500 grid grid-col-1 '>
                 <div
                     className={cn(
@@ -54,7 +56,7 @@ function StillMember({ name, role, image, link }: any) {
                 </CardContent>
 
             </Card>
-        </a>
+        </Link>
     );
 }
 
@@ -114,8 +116,13 @@ export function FlipMember({ name, role, image, link }: any) {
                             <p className='text-[7.0vw] min-[375px]:text-[3vw] font-regular text-center m-1'>{role}</p>
 
                             {link != null &&
-                                <Link href={link}>
-                                    <FaLinkedin size={30} />
+                                <Link href={link} target="_LINK" rel="noreferrer">
+                                    <IconContext.Provider value={{ color: "white", className: "size-[10.0vw] min-[375px]:size-[5vw]" }}>
+                                        <div>
+                                            <FaLinkedin />
+                                        </div>
+
+                                    </IconContext.Provider>
                                 </Link>
                             }
 
