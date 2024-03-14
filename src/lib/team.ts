@@ -97,6 +97,18 @@ const members: Member[] = [
         image: "/team/yashasvi_n.png",
         link: "http://linkedin.com/in/yashasvi-nandamuri-a1a21b280/"
     },  
+    {
+        name: "Yashika G.",
+        role: "PR Team",
+        image: "/team/yashika_g.jpg",
+        link: "http://linkedin.com/in/yashikagandhi2023"
+    },  
+    {
+        name: "Ananya S.",
+        role: "Logistics Team",
+        image: "/team/ananya_s.png",
+        link: "https://www.linkedin.com/in/naga-sai-sri-ananya-susarla-51418627a/"
+    },  
 
 ]
 

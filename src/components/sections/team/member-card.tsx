@@ -1,7 +1,6 @@
 import Helmet from '@/assets/helmet';
 import Link from 'next/link';
 import { FaLinkedin } from "react-icons/fa";
-import { BackgroundGradient } from '@/components/ui/background-gradient';
 import { CardFlip } from '@/components/ui/flip-card/flip-card';
 import Image from 'next/image';
 import { Card, CardContent } from '@/components/ui/card';
