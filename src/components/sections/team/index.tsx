@@ -17,7 +17,7 @@ export default function Team() {
             <InfiniteMovingCards speed="slow" direction="right" className="w-[95%] overflow-x-hidden">
               {members_split[0].map((member, index) => {
                 return (
-                  <li key={index}>
+                  <li key={index} className="w-[15vw] aspect-square">
                     <Member {...member} />
                   </li>
                 );
@@ -29,7 +29,7 @@ export default function Team() {
             <InfiniteMovingCards speed="slow" direction="left" className="w-[95%] overflow-x-hidden">
               {members_split[1].map((member, index) => {
                 return (
-                  <li key={index}>
+                  <li key={index} className="w-[15vw] aspect-square">
                     <Member {...member} />
                   </li>
                 );
