@@ -15,8 +15,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html suppressHydrationWarning={true} lang="en">
-      <body className={inter.className}> {children}</body>
+    <html lang="en">
+      <body
+        className={`${inter.className} bg-gradient-to-b from-gray-900 to-gray-950`}
+      >
+        {" "}
+        {children}
+      </body>
     </html>
   );
 }
