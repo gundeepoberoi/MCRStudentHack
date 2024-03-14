@@ -12,6 +12,9 @@ import { TypewriterEffectSmooth } from "@/components/ui/typewriter-effect";
 import Footer from "@/components/footer/footer";
 
 import { LazyMotion } from "framer-motion";
+import { FaFirefox } from "react-icons/fa";
+import Navbar from "@/components/sections/navbar";
+
 
 const loadFeatures = () => import("@/lib/features").then((res) => res.default);
 
@@ -34,7 +37,7 @@ export default function Home() {
             />
           </div>
           <div className="flex min-h-screen w-full flex-col items-center justify-center p-4 sm:p-24 relative">
-            <div className="grid grid-cols-1 min-[950px]:grid-cols-2 w-full gap-1">
+            {/* <div className="grid grid-cols-1 min-[950px]:grid-cols-2 w-full gap-1">
               <div className="flex items-center justify-center">
                 <Alt1 className="w-full transition ease-in-out delay-150 hover:scale-110 content-center lg:mt-[-20vw] lg:ml-[-10vw]" />
               </div>
@@ -43,23 +46,23 @@ export default function Home() {
                   <Button type="submit" >Register Now</Button>
                 </form>
               </div>
-            </div>
+            </div> */}
 
-            <div className="xl:mt-[-30vh]" suppressHydrationWarning={true}>
+            {/* <div className="xl:mt-[-30vh]" suppressHydrationWarning={true}>
               <TypewriterEffectSmooth className="xl:mt-[+20vh] mt-[+10vh] xl:mb-[-20vh] mb-[-5vh] justify-center" words={[
                 {
                   text: "Registration", className: "text-cyan-100"
                 }, { text: "Closes in:", className: "text-cyan-300" },
               ]} />
               <TimerContainer currentDate={new Date()} />
-            </div>
+            </div> */}
             {/* <About /> */}
             {/* <Schedule /> */}
-            {/* <Team /> */}
+            <Team />
             {/* <FAQ /> */}
 
           </div>
-          <Footer /> 
+          {/* <Footer /> */}
 
         </main>
       </LazyMotion>
