@@ -9,8 +9,7 @@ export default function Schedule() {
     <section id="schedule" className="py-20 sm:py-32">
       <ScheduleHeader
         title="Schedule"
-        description="A 24-hour hackathon to build the best among us amongst us in the among
-          us metaverse."
+        description="Our hackathons aren't just 24 hours of straight coding - there'll be many workshops, mini-games and events for everyone to have fun and learn!"
       />
       <div className="relative mt-14 sm:mt-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative">
