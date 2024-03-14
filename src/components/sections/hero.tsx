@@ -14,11 +14,11 @@ const Hero = () => {
       className="flex min-h-screen w-full flex-col items-center justify-center p-4 relative mb-12"
     >
       <>
-        <div className="grid grid-cols-1 lg:grid-cols-2 w-full gap-1">
-          <div className="flex items-center justify-center">
+        <div className="flex flex-col lg:flex-row justify-center items-center w-full gap-1 lg:gap-36">
+          <div>
             <Alt1 className="w-full transition ease-in-out delay-150 hover:scale-110 content-center" />
           </div>
-          <div className="flex flex-col items-center justify-center">
+          <div>
             <form action="https://apply.mcrstudenthack.com/">
               <input type="hidden" name="r" id="r" value="apply" />
               <Button type="submit">Register Now</Button>
@@ -27,16 +27,18 @@ const Hero = () => {
         </div>
 
         <div className="flex flex-col" suppressHydrationWarning={true}>
-          <TypewriterEffectSmooth
-            className="mt-[+10vh] mb-[-5vh] justify-center"
-            words={[
-              {
-                text: "Registration",
-                className: "text-cyan-100",
-              },
-              { text: "Closes in:", className: "text-cyan-300" },
-            ]}
-          />
+          <div className="mt-16">
+            <TypewriterEffectSmooth
+              className="justify-center"
+              words={[
+                {
+                  text: "Registration",
+                  className: "text-cyan-100",
+                },
+                { text: "Closes in:", className: "text-cyan-300" },
+              ]}
+            />
+          </div>
           <TimerContainer currentDate={new Date()} />
         </div>
       </>
