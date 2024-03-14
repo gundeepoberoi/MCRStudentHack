@@ -39,6 +39,12 @@ const members: Member[] = [
         link: "https://www.linkedin.com/in/insiya-mullamitha/"
     }, 
     {
+        name: "Keya G.",
+        role: "Logistics Lead",
+        image: "/team/keya_g.jpeg",
+        link: "https://www.linkedin.com/in/keya-gandhi13/"
+    },  
+    {
         name: "Sam M.",
         role: "Sponsorships",
         image: "/team/sam_m.jpg",
@@ -101,7 +107,7 @@ const members: Member[] = [
         name: "Yashika G.",
         role: "PR",
         image: "/team/yashika_g.jpg",
-        link: "http://linkedin.com/in/yashikagandhi2023"
+        link: "http://linkedin.com/in/yashikagandhi2023/"
     },  
     {
         name: "Ananya S.",
@@ -109,6 +115,13 @@ const members: Member[] = [
         image: "/team/ananya_s.png",
         link: "https://www.linkedin.com/in/naga-sai-sri-ananya-susarla-51418627a/"
     },  
+    {
+        name: "Armelia K.",
+        role: "PR and Graphics",
+        image: "/team/armelia_k.jpg",
+        link: "https://www.linkedin.com/in/armelia-briggite-kasenda/"
+    },  
+
 
 ]
 
