@@ -11,6 +11,11 @@ export default function LightBackground() {
 
   let frame: number = 0;
 
+  function verify_resize() {
+    if(canvasRef.current?.width != window.innerWidth) init();
+    return;
+  }
+
   function init() {
     if (canvasRef.current === null) return;
 
@@ -67,7 +72,7 @@ export default function LightBackground() {
   useEffect(() => {
     init();
     setInterval(drawStars, 50);
-    window.addEventListener("resize", init);
+    window.addEventListener("resize", verify_resize);
   }, []);
 
   return (
