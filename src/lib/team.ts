@@ -54,7 +54,6 @@ const members: Member[] = [
         name: "Jacob Y.",
         role: "Dev",
         image: "/team/jacob_y.jpeg",
-        link: "#",
     }, 
     {
         name: "Aadityaa M.",
