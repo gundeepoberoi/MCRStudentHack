@@ -14,19 +14,19 @@ export default function LightBackground() {
   function init() {
     if (canvasRef.current === null) return;
 
-    canvasRef.current.width = window.screen.width;
-    canvasRef.current.height = window.screen.height;
+    canvasRef.current.width = window.innerWidth;
+    canvasRef.current.height = window.innerHeight;
     contextRef.current = canvasRef.current.getContext("2d");
 
     const density = 0.0005;
-    generateStars(window.screen.width * window.screen.height * density);
+    generateStars(window.innerWidth * window.innerHeight * density);
   }
 
   function generateStars(numStars: number) {
     stars = [];
     for (let i=0; i<numStars; i++) {
-      let x = Math.random() * window.screen.width;
-      let y = Math.random() * window.screen.height;
+      let x = Math.random() * window.innerWidth;
+      let y = Math.random() * window.innerHeight;
       let r = Math.random() * 2;
       let b = Math.random();
       stars.push({
@@ -67,6 +67,7 @@ export default function LightBackground() {
   useEffect(() => {
     init();
     setInterval(drawStars, 50);
+    window.addEventListener("resize", init);
   }, []);
 
   return (
