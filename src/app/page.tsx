@@ -14,6 +14,7 @@ import Footer from "@/components/footer/footer";
 import { LazyMotion } from "framer-motion";
 import { FaFirefox } from "react-icons/fa";
 import Navbar from "@/components/sections/navbar";
+import { Card } from "@/components/ui/card";
 
 
 const loadFeatures = () => import("@/lib/features").then((res) => res.default);
@@ -60,7 +61,6 @@ export default function Home() {
             {/* <Schedule /> */}
             <Team />
             {/* <FAQ /> */}
-
           </div>
           {/* <Footer /> */}
 
