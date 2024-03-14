@@ -19,10 +19,10 @@ export default function Home() {
           <div className="w-screen h-screen fixed inset-0 overflow-hidden">
             <LightBackground />
           </div>
-          {/* <Hero /> */}
+          <Hero />
           {/* <About /> */}
           {/* <Schedule /> */}
-          <Team />
+          {/* <Team /> */}
           {/* <FAQ /> */}
           {/* <Footer /> */}
         </main>

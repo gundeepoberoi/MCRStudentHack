@@ -35,13 +35,6 @@ export default function Team() {
               );
             })}
           </InfiniteMovingCards>
-          {Members.map((member, index) => {
-            return (
-              <li key={index} className="w-[15vw] max-w-[200px] aspect-[3/4]">
-                <Member flip={false} {...member} />
-              </li>
-            );
-          })}
         </div>
       </div>
 
