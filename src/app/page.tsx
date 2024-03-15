@@ -1,17 +1,32 @@
+"use client";
 import About from "@/components/sections/about";
 import FAQ from "@/components/sections/faq";
 import Schedule from "@/components/sections/schedule";
-import Alt1 from "@/assets/logos/alt 1.svg";
+import Team from "@/components/sections/team";
+import Footer from "@/components/footer/footer";
+
+import { LazyMotion } from "framer-motion";
+import Hero from "@/components/sections/hero";
+import LightBackground from "@/components/ui/light-background";
+
+const loadFeatures = () => import("@/lib/features").then((res) => res.default);
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between md:p-24 p-8">
-      {/* <h1 className="text-6xl font-bold">MCRStudentHack</h1> */}
-
-      <Alt1 className="transition ease-in-out delay-150 hover:scale-110" />
-      <About />
-      <Schedule />
-      <FAQ />
-    </main>
+    <>
+      <LazyMotion features={loadFeatures}>
+        <main className="flex min-h-screen flex-col items-center justify-between p-8 md:p-24 relative">
+          <div className="w-screen h-screen fixed inset-0 overflow-hidden">
+            <LightBackground />
+          </div>
+          <Hero />
+          {/* <About /> */}
+          {/* <Schedule /> */}
+          {/* <Team /> */}
+          {/* <FAQ /> */}
+          {/* <Footer /> */}
+        </main>
+      </LazyMotion>
+    </>
   );
 }
