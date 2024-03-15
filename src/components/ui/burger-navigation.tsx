@@ -11,28 +11,6 @@ import Link from "next/link";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { BsXLg } from "react-icons/bs";
 
-const NavItem = ({
-    name,
-    href,
-    className,
-    toggle,
-}: {
-    name: string;
-    href: string;
-    className?: string;
-    toggle: () => void;
-}) => {
-    return (
-        <m.div
-            className={cn("text-2xl font-medium text-white hover:text-white/60 cursor-pointer",
-                className)}
-        >
-            <Link href={href} onClick={toggle}>
-                {name}
-            </Link>
-        </m.div>
-    );
-};
 
 export const BurgerNav = ({
     navItems,
@@ -60,6 +38,21 @@ export const BurgerNav = ({
         }
     };
 
+    const list = {
+        hidden: {
+            opacity: 0,
+            transition: { when: "afterChildren" }
+        }
+    }
+
+    const listItem = {
+        hidden: {
+            opacity: 0,
+            transition: { duration: 2 }
+        }
+    }
+
+
     return (
         <header className={cn("z-50 fixed left-0 justify-end w-full flex top-0 py-6 px-6", className)}>
             <nav className="px-2 flex justify-end">
@@ -70,10 +63,11 @@ export const BurgerNav = ({
             <AnimatePresence>
                 {open && (
                     <m.div
-                        initial="initial"
-                        animate="animate"
-                        exit="exit"
-                        className="fixed left-0 top-0 w-full h-screen origin-top bg-black text-white py-6 px-8 overscroll-contain overflow-y-hidden"
+                        initial={{ x: '100%' }}
+                        animate={{ x: 0 }}
+                        exit={{ x: '110%'}}
+                        transition={{ duration: 0.2 }}
+                        className="fixed left-0 top-0 w-screen h-screen origin-top bg-black/30 backdrop-blur-md text-white py-6 px-8 overscroll-contain overflow-y-hidden"
                     >
                         <div className="flex h-full flex-col">
                             <div className="flex justify-end">
@@ -81,35 +75,24 @@ export const BurgerNav = ({
                                     <BsXLg fontSize={30} color="white" />
                                 </div>
                             </div>
-                            <m.div
-                                initial="initial"
-                                animate="open"
-                                exit="initial"
-                                className="flex flex-col h-full justify-center font-lora items-center gap-4"
-                            >
+
+                            <m.ul variants={list} className="flex flex-col h-full justify-center font-lora items-center gap-4">
                                 {navItems.map((item, index) => {
                                     return (
-                                        <div className="overflow-hidden" key={index}>
-                                            <NavItem
-                                                name={item.name}
-                                                href={item.link}
-                                                toggle={toggleMenu}
-                                            />
-                                        </div>
+                                        <m.li variants={listItem} key={index} className="text-2xl font-medium text-white hover:text-white/60 cursor-pointer">
+                                            <Link href={item.link} onClick={toggleMenu}>
+                                                {item.name}
+                                            </Link>
+                                        </m.li>
                                     );
                                 })}
+                                <m.li variants={listItem} key={mainItem.name} className="text-2xl font-medium text-white hover:text-white/60 cursor-pointer">
+                                    <Link href={mainItem.link} onClick={toggleMenu}>
+                                        {mainItem.name}
+                                    </Link>
+                                </m.li>
+                            </m.ul>
 
-                                <div className="overflow-hidden">
-                                    <m.div>
-                                        <NavItem
-                                            name={mainItem.name}
-                                            href={mainItem.link}
-                                            toggle={toggleMenu}
-                                            className="text-2xl font-medium cursor-pointer rounded-full px-8 bg-white text-black hover:bg-white/60"
-                                        />
-                                    </m.div>
-                                </div>
-                            </m.div>
                         </div>
                     </m.div>
                 )}
