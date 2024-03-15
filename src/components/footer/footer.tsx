@@ -1,17 +1,23 @@
-import React from 'react';
+import Link from "next/link";
+import React from "react";
 
 const Footer: React.FC = () => {
-    return (
-        <footer className="rounded-lg shadow m-4 dark:bg-gray-800 mb-[-10vh]">
-            <div className="w-full mx-auto max-w-screen-2xl p-4 md:flex md:items-center md:justify-between">
-                <span className="text-sm text-gray-400 sm:text-center dark:text-gray-400">© 2024 <a href="https://mcrstudenthack.com/" className="hover:underline">MCRStudentHack</a>. All Rights Reserved.
-                    <br />
-                    Designed By: Gundeep Oberoi, Jacob Georgis, Yat Long Poon, Dhruv Sharma, Aadityaa Mehrohtra, Jacob Yip and Hanin Amri.
-                </span>
-            </div>
-
-        </footer>
-    );
+  return (
+    <footer className="flex border-t border-gray-100/50 mt-10 py-4 -mb-5 md:-mb-20">
+      <div className="w-full mx-auto max-w-screen-2xl p-4 md:flex md:items-center md:justify-between">
+        <p className="text-xs md:text-sm text-gray-400 sm:text-center">
+          © 2024{" "}
+          <Link href="https://mcrstudenthack.com/" className="hover:underline">
+            MCRStudentHack
+          </Link>
+          . All Rights Reserved.
+          <br />
+          Designed By: Gundeep Oberoi, Jacob Georgis, Yat Long Poon, Dhruv
+          Sharma, Aadityaa Mehrohtra, Jacob Yip and Hanin Amri.
+        </p>
+      </div>
+    </footer>
+  );
 };
 
 export default Footer;

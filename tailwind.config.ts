@@ -28,7 +28,7 @@ const config = {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
-        background: "hsl(var(--sh-background))",
+        background: "hsl(var(--sh-secondary-background))",
         foreground: "hsl(var(--sh-foreground))",
         primary: {
           DEFAULT: "hsl(var(--primary))",
@@ -86,28 +86,24 @@ const config = {
           },
         },
         flip: {
-          'from': { transform:'rotateX(0deg)', transformOrigin: '50% bottom ',},
-          'to':{transform: 'rotateX(180deg)', transformOrigin: '50% bottom ',}
+          from: { transform: "rotateX(0deg)", transformOrigin: "50% bottom " },
+          to: { transform: "rotateX(180deg)", transformOrigin: "50% bottom " },
         },
       },
       animation: {
-        "accordion-down": "accordion-down 0.2s ease-out",
-        "accordion-up": "accordion-up 0.2s ease-out",
-        "flip":"flip 1s cubic-bezier(0, 0, 0.2, 1) infinite",
+        flip: "flip 1s cubic-bezier(0, 0, 0.2, 1) infinite",
 
         "meteor-effect": "meteor 5s linear infinite",
         scroll:
           "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
       },
-    },
-    fontFamily: {
-      'redhat':['Red Hat Text', 'sans-serif'],
+      fontFamily: {
+        redhat: ["Red Hat Text", "sans-serif"],
+      },
     },
   },
 
-  plugins: [require("tailwindcss-animate"), 
-            addVariablesForColors
-          ],
+  plugins: [require("tailwindcss-animate"), addVariablesForColors],
 } satisfies Config;
 
 function addVariablesForColors({ addBase, theme }: any) {
@@ -122,4 +118,3 @@ function addVariablesForColors({ addBase, theme }: any) {
 }
 
 export default config;
-
