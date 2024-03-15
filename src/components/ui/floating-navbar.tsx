@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import {
-  motion,
+  m,
   AnimatePresence,
   useScroll,
   useMotionValueEvent,
@@ -17,19 +17,17 @@ export const FloatingNav = ({
   navItems: {
     name: string;
     link: string;
-    icon?: JSX.Element;
   }[];
   mainItem: {
     name: string;
     link: string;
-    icon?: JSX.Element;
   }
   className?: string;
 }) => {
 
   return (
     <AnimatePresence mode="wait">
-      <motion.div
+      <m.div
         initial={{
           opacity: 1,
           y: -100,
@@ -54,8 +52,7 @@ export const FloatingNav = ({
               "relative items-center flex space-x-1 text-white hover:text-[#c0f0ea]"
             )}
           >
-            <span className="block sm:hidden">{navItem.icon}</span>
-            <span className="hidden sm:block text-sm">{navItem.name}</span>
+            <span className="text-sm">{navItem.name}</span>
           </Link>
         ))}
         <Link href={mainItem.link} 
@@ -63,7 +60,7 @@ export const FloatingNav = ({
           
             <span>{mainItem.name}</span>
         </Link>
-      </motion.div>
+      </m.div>
     </AnimatePresence>
   );
 };
