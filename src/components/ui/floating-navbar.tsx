@@ -48,6 +48,7 @@ export const FloatingNav = ({
           <Link
             key={`link=${idx}`}
             href={navItem.link}
+            passHref
             className={cn(
               "relative items-center flex space-x-1 text-white hover:text-[#c0f0ea]"
             )}
@@ -55,7 +56,7 @@ export const FloatingNav = ({
             <span className="text-sm">{navItem.name}</span>
           </Link>
         ))}
-        <Link href={mainItem.link} 
+        <Link href={mainItem.link} passHref
               className="border text-sm font-medium relative border-[#10F6D3] dark:border-white/[0.2] text-white hover:text-[#c0f0ea] px-4 py-2 rounded-full">
           
             <span>{mainItem.name}</span>
