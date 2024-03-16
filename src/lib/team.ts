@@ -11,7 +11,7 @@ const members: Member[] = [
     {
         name: "Jakub P.",
         role: "Co-Director",
-        image: "/team/jakub_p.png",
+        image: "/team/jakub_p.jpg",
         link: "https://www.linkedin.com/in/jacob-pabian/",
     },
     {
@@ -29,7 +29,7 @@ const members: Member[] = [
     {
         name: "Hanin S.",
         role: "PR and Graphics Lead",
-        image: "/team/hanin_s.png",
+        image: "/team/hanin_s.jpg",
         link: "https://www.linkedin.com/in/haninsofia/"
     }, 
     {
@@ -100,7 +100,7 @@ const members: Member[] = [
     {
         name: "Yashasvi N.",
         role: "Logistics",
-        image: "/team/yashasvi_n.png",
+        image: "/team/yashasvi_n.jpg",
         link: "http://linkedin.com/in/yashasvi-nandamuri-a1a21b280/"
     },  
     {
@@ -112,7 +112,7 @@ const members: Member[] = [
     {
         name: "Ananya S.",
         role: "Logistics",
-        image: "/team/ananya_s.png",
+        image: "/team/ananya_s.jpg",
         link: "https://www.linkedin.com/in/naga-sai-sri-ananya-susarla-51418627a/"
     },  
     {

@@ -36,7 +36,7 @@ function StillMember({ name, role, image, link }: any) {
                                 className='rounded-full w-[54%] mt-[18%] aspect-square object-cover object-center justify-self-center'
                             />
                             <Image
-                                src={"/helmet.svg"}
+                                src={"/helmet.png"}
                                 width={500}
                                 height={500}
                                 alt={name}
@@ -87,7 +87,7 @@ export function FlipMember({ name, role, image, link }: any) {
                                     className='rounded-full w-[54%] mt-[18%] aspect-square object-center justify-self-center'
                                 />
                                 <Image
-                                    src={"/helmet.svg"}
+                                    src={"/helmet.png"}
                                     width={500}
                                     height={500}
                                     alt={name}
