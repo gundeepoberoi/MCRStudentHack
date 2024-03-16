@@ -45,22 +45,21 @@ export const FloatingNav = ({
         )}
       >
         {navItems.map((navItem: any, idx: number) => (
-          <Link
+          <a
             key={`link=${idx}`}
             href={navItem.link}
-            passHref
             className={cn(
               "relative items-center flex space-x-1 text-white hover:text-[#c0f0ea]"
             )}
           >
             <span className="text-sm">{navItem.name}</span>
-          </Link>
+          </a>
         ))}
-        <Link href={mainItem.link} passHref
+        <a href={mainItem.link}
               className="border text-sm font-medium relative border-[#10F6D3] dark:border-white/[0.2] text-white hover:text-[#c0f0ea] px-4 py-2 rounded-full">
           
             <span>{mainItem.name}</span>
-        </Link>
+        </a>
       </m.div>
     </AnimatePresence>
   );
