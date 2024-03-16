@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import {
-  motion,
+  m,
   AnimatePresence,
   useScroll,
   useMotionValueEvent,
@@ -17,19 +17,17 @@ export const FloatingNav = ({
   navItems: {
     name: string;
     link: string;
-    icon?: JSX.Element;
   }[];
   mainItem: {
     name: string;
     link: string;
-    icon?: JSX.Element;
   }
   className?: string;
 }) => {
 
   return (
     <AnimatePresence mode="wait">
-      <motion.div
+      <m.div
         initial={{
           opacity: 1,
           y: -100,
@@ -51,19 +49,18 @@ export const FloatingNav = ({
             key={`link=${idx}`}
             href={navItem.link}
             className={cn(
-              "relative items-center flex space-x-1 text-[#10F6D3] hover:text-[#c0f0ea]"
+              "relative items-center flex space-x-1 text-white hover:text-[#c0f0ea]"
             )}
           >
-            <span className="block sm:hidden">{navItem.icon}</span>
-            <span className="hidden sm:block text-sm">{navItem.name}</span>
+            <span className="text-sm">{navItem.name}</span>
           </Link>
         ))}
         <Link href={mainItem.link} 
-              className="border text-sm font-medium relative border-[#10F6D3] dark:border-white/[0.2] text-[#10F6D3] hover:text-[#c0f0ea] px-4 py-2 rounded-full">
+              className="border text-sm font-medium relative border-[#10F6D3] dark:border-white/[0.2] text-white hover:text-[#c0f0ea] px-4 py-2 rounded-full">
           
             <span>{mainItem.name}</span>
         </Link>
-      </motion.div>
+      </m.div>
     </AnimatePresence>
   );
 };
