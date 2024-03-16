@@ -1,9 +1,8 @@
 "use client";
 import dynamic from "next/dynamic";
+import Image from 'next/image';
 import { Button } from "../ui/moving-border";
 import { TypewriterEffectSmooth } from "../ui/typewriter-effect";
-import Image from 'next/image';
-import Alt1 from "@/assets/logos/alt 1.svg";
 const TimerContainer = dynamic(() => import("../ui/TimerContainer"), {
   ssr: false,
 });

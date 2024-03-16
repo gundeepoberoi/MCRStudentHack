@@ -80,7 +80,7 @@ export const BurgerNav = ({
                                 {navItems.map((item, index) => {
                                     return (
                                         <m.li variants={listItem} key={index} className="text-2xl font-medium text-white hover:text-white/60 cursor-pointer">
-                                            <a href={item.link} onClick={toggleMenu} target="_LINK" rel="noreferrer">
+                                            <a href={item.link} onClick={toggleMenu}>
                                                 {item.name}
                                             </a>
                                         </m.li>
