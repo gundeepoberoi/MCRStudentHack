@@ -18,8 +18,8 @@ const Hero = () => {
           <div>
             <Image
               src={"/alt_1.png"}
-              width={1200}
-              height={1200}
+              width={600}
+              height={600}
               alt={"Logo"}
               className="w-full max-w-[500px] transition ease-in-out delay-150 hover:scale-110 content-center"
             />

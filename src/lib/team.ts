@@ -121,6 +121,12 @@ const members: Member[] = [
         image: "/team/armelia_k.jpg",
         link: "https://www.linkedin.com/in/armelia-briggite-kasenda/"
     },  
+    {
+        name: "Matthew L.",
+        role: "PR",
+        image: "/team/matthew_l.jpg",
+        link: "https://www.linkedin.com/in/matthewlewis2100/"
+    },  
 
 
 ]
