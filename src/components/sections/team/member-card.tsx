@@ -16,8 +16,7 @@ export default function Member({ name, role, image, link, flip }: any) {
 function StillMember({ name, role, image, link }: any) {
     return (
         <Link className='w-full aspect-[3/4]' href={link? link : "#"} target="_LINK" rel="noreferrer">
-            <Card className='w-full h-full relative group bg-[#111827]/50 rounded-3xl border-none ring-2 ring-slate-500 grid grid-col-1 '>
-
+            <Card className='w-full h-full relative group bg-[#111827]/30 rounded-3xl border-none ring-2 ring-slate-500 grid grid-col-1 '>         
                 <div
                     className={cn(
                         "absolute inset-0 rounded-3xl z-[5] opacity-60 group-hover:opacity-100 blur-sm transition duration-500",

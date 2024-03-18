@@ -9,6 +9,7 @@ import Team from "@/components/sections/team";
 import Hero from "@/components/sections/hero";
 import LightBackground from "@/components/ui/light-background";
 import { LazyMotion } from "framer-motion";
+import Socials from "@/components/sections/hero/socials";
 
 const loadFeatures = () => import("@/lib/features").then((res) => res.default);
 
