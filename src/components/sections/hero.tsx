@@ -17,7 +17,7 @@ const Hero = () => {
         <div className="flex flex-col lg:flex-row justify-center items-center w-full gap-1 lg:gap-36">
           <div>
             <Image
-              src={"/alt_1.png"}
+              src={"/alt_2.png"}
               width={600}
               height={600}
               alt={"Logo"}
