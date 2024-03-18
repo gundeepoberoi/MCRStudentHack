@@ -1,13 +1,10 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 import {
-  motion,
+  m,
   AnimatePresence,
-  useScroll,
-  useMotionValueEvent,
 } from "framer-motion";
 import { cn } from "@/lib/utils";
-import Link from "next/link";
 
 export const FloatingNav = ({
   navItems,
@@ -17,19 +14,17 @@ export const FloatingNav = ({
   navItems: {
     name: string;
     link: string;
-    icon?: JSX.Element;
   }[];
   mainItem: {
     name: string;
     link: string;
-    icon?: JSX.Element;
   }
   className?: string;
 }) => {
 
   return (
     <AnimatePresence mode="wait">
-      <motion.div
+      <m.div
         initial={{
           opacity: 1,
           y: -100,
@@ -47,23 +42,22 @@ export const FloatingNav = ({
         )}
       >
         {navItems.map((navItem: any, idx: number) => (
-          <Link
+          <a
             key={`link=${idx}`}
             href={navItem.link}
             className={cn(
-              "relative items-center flex space-x-1 text-[#10F6D3] hover:text-[#c0f0ea]"
+              "relative items-center flex space-x-1 text-white hover:text-[#c0f0ea]"
             )}
           >
-            <span className="block sm:hidden">{navItem.icon}</span>
-            <span className="hidden sm:block text-sm">{navItem.name}</span>
-          </Link>
+            <span className="text-sm">{navItem.name}</span>
+          </a>
         ))}
-        <Link href={mainItem.link} 
-              className="border text-sm font-medium relative border-[#10F6D3] dark:border-white/[0.2] text-[#10F6D3] hover:text-[#c0f0ea] px-4 py-2 rounded-full">
+        <a href={mainItem.link}
+              className="border text-sm font-medium relative border-[#10F6D3] dark:border-white/[0.2] text-white hover:text-[#c0f0ea] px-4 py-2 rounded-full">
           
             <span>{mainItem.name}</span>
-        </Link>
-      </motion.div>
+        </a>
+      </m.div>
     </AnimatePresence>
   );
 };
