@@ -12,17 +12,27 @@
             overflow: hidden;
         }
         .sun {
-            width: 12vmax;
-            height: 12vmax;
+            width: 13vmax;
+            height: 13vmax;
             background-image: url('sun.gif');
             background-position: center;
             background-size: 150%;
             background-repeat: no-repeat;
             border-radius: 50%;
             position: relative;
-            animation: spin 20s linear infinite;
         }
         .planet {
+            width: 10vmax;
+            height: 10vmax;
+            background-image: url('nike.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 50%;
+            position: absolute;
+            animation: revolve 20s linear infinite;
+        }
+        .planet-1 {
             width: 9vmax;
             height: 9vmax;
             background-image: url('nike.jpg');
@@ -33,7 +43,7 @@
             position: absolute;
             animation: revolve 20s linear infinite;
         }
-        .planet-1 {
+        .planet-2 {
             width: 8vmax;
             height: 8vmax;
             background-image: url('nike.jpg');
@@ -44,34 +54,18 @@
             position: absolute;
             animation: revolve 20s linear infinite;
         }
-        .planet-2 {
-            width: 7vmax;
-            height: 7vmax;
-            background-image: url('nike.jpg');
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            border-radius: 50%;
-            position: absolute;
-            animation: revolve 20s linear infinite;
-        }
-        @keyframes spin {
-            from { transform: rotate(0deg); }
-            to { transform: rotate(360deg); }
-        }
         @keyframes revolve {
-            from { transform: rotate(0deg) translate(17vmax) rotate(0deg); }
-            to { transform: rotate(360deg) translate(17vmax) rotate(-360deg); }
+            from { transform: rotate(0deg) translate(18vmax) rotate(0deg); }
+            to { transform: rotate(360deg) translate(18vmax) rotate(-360deg); }
         }
     </style>
 </head>
 <body>
-    <div class="sun">
-        <div class="planet" style="animation-delay: 0s;"></div>
-        <div class="planet" style="animation-delay: -4s;"></div>
-        <div class="planet-1" style="animation-delay: -8s;"></div>
-        <div class="planet-1" style="animation-delay: -12s;"></div>
-        <div class="planet-2" style="animation-delay: -16s;"></div>
-    </div>
+    <div class="sun"></div>
+    <div class="planet" style="animation-delay: 0s;"></div>
+    <div class="planet" style="animation-delay: -4s;"></div>
+    <div class="planet-1" style="animation-delay: -8s;"></div>
+    <div class="planet-1" style="animation-delay: -12s;"></div>
+    <div class="planet-2" style="animation-delay: -16s;"></div>
 </body>
 </html>
