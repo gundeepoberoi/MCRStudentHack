@@ -8,7 +8,7 @@ import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
 export default function Team() {
   const members_split = getSplitMembers();
   return (
-    <section id="team" className="w-full z-10 mt-8">
+    <section id="team" className="w-full z-50 mt-8">
       <h2 className="font-display text-4xl font-medium tracking-tighter text-white sm:text-5xl text-center">
         Our Crew
       </h2>
