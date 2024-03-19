@@ -4,9 +4,9 @@
 
 
 Font-size: 
-- Header: text-5xl
-- Sub-header: text-4xl
-- Text: text-lg
+- Header: text-4xl
+- Sub-header: N/A
+- Text: text-lg (except text in About Us)
 
 
 Font-style: 
@@ -19,7 +19,8 @@ Text-colour:
 
 
 Font-family: 
-- Roboto
+- General: Roboto
+- Schedule: N/A
 
 ------------------------------------------------------------------------------------------
 
@@ -31,7 +32,7 @@ about.tsx:
 
 
 schedule.tsx: 
-1. Change font size of schedule from 4xl to 5xl (Consistent with About)
+1. Change font size of header "Schedule" from 4xl to 5xl (Consistent with About)
 2. Add text-lg to Event 1, Event 2, Event 3 (Consistent with About)
 3. Change font size of 12th March from 7xl to 4xl (It should not be larger than the heading "Schedule" and "About" so either make the headings bigger or make the date smaller; Personally, I think the headings are already big enough but I am not good at design)
 4. Add py-7 to the heading "Schedule" such that the headings "About" and "Schedule" will have the same distance to the <div></div> below them
@@ -81,13 +82,18 @@ navigation.tsx:
 
 
 team.tsx (filename: index.tsx): 
-1. Change font-size of header from 4xl to 5xl to ensure consistent font-size for headers
+1. Change font-size of header to 4xl to ensure consistent font-size for headers
 2. Change font-family of header to Roboto to ensure consistent font-family of text
 3. Make the header bold: Change from font-medium to font-bold
 4. 
 
 
+layout.tsx: 
+1. Change default font-style from "Inter" to "Roboto"
+2. 
+
+
 tailwind.config.ts: 
-1. Add font family "roboto" after "redhat"
+1. Remove font-family
 2. 
 
