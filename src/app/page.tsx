@@ -19,7 +19,7 @@ export default function Home() {
         <Navigation />
 
         <main className="flex min-h-screen flex-col items-center justify-between p-8 md:p-24 relative">
-          <div className="w-screen h-screen fixed inset-0 overflow-hidden">
+          <div className="w-screen h-screen fixed inset-0 overflow-hidden -z-1">
             <LightBackground />
           </div>
           <Hero />
