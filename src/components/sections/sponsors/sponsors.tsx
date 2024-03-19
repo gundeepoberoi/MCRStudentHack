@@ -1,17 +1,18 @@
 import React from 'react';
-import styles from './sponsors.module.css'; // Assuming you moved the CSS to a separate file
+import './sponsors.css';
 
-const Sponsors: React.FC = () => {
-  return (
-  <body>
-    <div className={styles.sun}></div>
-    <div className={styles.planet} style={{animationDelay: '0s'}}></div>
-    <div className={styles.planet} style={{animationDelay: '-4s'}}></div>
-    <div className={styles.planet1} style={{animationDelay: '-8s'}}></div>
-    <div className={styles.planet1} style={{animationDelay: '-12s'}}></div>
-    <div className={styles.planet2} style={{animationDelay: '-16s'}}></div>
-  </body>  
-  );
-};
 
-export default Sponsors;
+export default function Sponsors() {
+    return (
+      <section id="sponsors" className="mt-48 mb-24 w-full z-10">
+        <div className="flex flex-wrap w-full text-white rounded-lg overflow-hidden">
+          <div className="sun"></div>
+          <div className="planet" style={{animationDelay: '0s'}}></div>
+          <div className="planet" style={{animationDelay: '-4s'}}></div>
+          <div className="planet-1" style={{animationDelay: '-8s'}}></div>
+          <div className="planet-1" style={{animationDelay: '-12s'}}></div>
+          <div className="planet-2" style={{animationDelay: '-16s'}}></div>
+          </div>
+      </section>
+    );
+  }

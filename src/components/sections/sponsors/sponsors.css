@@ -5,12 +5,11 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    overflow: hidden;
 }
 .sun {
     width: 13vmax;
     height: 13vmax;
-    background-image: url('sun.gif');
+    background-image: url('../../../assets/images/sun.gif');
     background-position: center;
     background-size: 150%;
     background-repeat: no-repeat;
@@ -20,7 +19,7 @@ body {
 .planet {
     width: 10vmax;
     height: 10vmax;
-    background-image: url('nike.jpg');
+    background-image: url('../../../assets/images/nike.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -31,7 +30,7 @@ body {
 .planet-1 {
     width: 9vmax;
     height: 9vmax;
-    background-image: url('nike.jpg');
+    background-image: url('../../../assets/images/nike.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -42,7 +41,7 @@ body {
 .planet-2 {
     width: 8vmax;
     height: 8vmax;
-    background-image: url('nike.jpg');
+    background-image: url('../../../assets/images/nike.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

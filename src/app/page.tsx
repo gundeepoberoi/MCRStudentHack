@@ -4,6 +4,7 @@ import About from "@/components/sections/about";
 import FAQ from "@/components/sections/faq";
 import Schedule from "@/components/sections/schedule";
 import Team from "@/components/sections/team";
+import Sponsors from "@/components/sections/sponsors/sponsors";
 import Footer from "@/components/footer/footer";
 
 import { LazyMotion } from "framer-motion";
@@ -26,6 +27,7 @@ export default function Home() {
           <About />
           <Schedule />
           <Team />
+          <Sponsors />
           <FAQ />
           <Footer />
         </main>
