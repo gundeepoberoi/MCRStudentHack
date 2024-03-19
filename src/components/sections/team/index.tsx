@@ -9,7 +9,7 @@ export default function Team() {
   const members_split = getSplitMembers();
   return (
     <section id="team" className="w-full z-10 mt-8">
-      <h2 className="font-display text-5xl font-roboto font-medium tracking-tighter text-white sm:text-5xl text-center">
+      <h2 className="font-display text-5xl font-roboto font-bold tracking-tighter text-white sm:text-5xl text-center">
         Our Crew
       </h2>
       <div className="container hidden md:block">
