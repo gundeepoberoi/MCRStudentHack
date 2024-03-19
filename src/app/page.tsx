@@ -16,7 +16,7 @@ export default function Home() {
   return (
     <>
       <LazyMotion features={loadFeatures}>
-      <Navigation />
+        <Navigation />
 
         <main className="flex min-h-screen flex-col items-center justify-between p-8 md:p-24 relative">
           <div className="w-screen h-screen fixed inset-0 overflow-hidden">
@@ -25,8 +25,8 @@ export default function Home() {
           <Hero />
           <About />
           <Schedule />
-          <Team />
           <FAQ />
+          <Team />
           <Footer />
         </main>
       </LazyMotion>
