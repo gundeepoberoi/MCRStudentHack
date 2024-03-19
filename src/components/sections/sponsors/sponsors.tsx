@@ -12,7 +12,7 @@ export default function Sponsors() {
           <div className="planet-1" style={{animationDelay: '-8s'}}></div>
           <div className="planet-1" style={{animationDelay: '-12s'}}></div>
           <div className="planet-2" style={{animationDelay: '-16s'}}></div>
-          </div>
+        </div>
       </section>
     );
   }
