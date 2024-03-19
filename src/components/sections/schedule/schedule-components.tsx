@@ -12,7 +12,7 @@ const ScheduleHeader = ({
   return (
     <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
       <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-5xl lg:pr-24">
-        <h2 className="font-display text-5xl font-medium tracking-tighter text-white sm:text-5xl">
+        <h2 className="font-display font-roboto text-5xl font-medium tracking-tighter text-white sm:text-5xl">
           {title}
         </h2>
         <p className="mt-4 font-display text-2xl tracking-tight text-white">
@@ -34,7 +34,7 @@ const ScheduleLgScreenLayout = ({ data }: { data: ScheduleItems }) => {
           </h3>
           <p className="mt-1.5 text-base tracking-tight z-10">{day.desc}</p>
 
-          <Card className="mt-10 space-y-8 bg-gray-900 px-10 py-14 text-center flex flex-col grow isolate shadow-lg ring-1 ring-black/5 border-none backdrop-blur-sm text-white overflow-hidden">
+          <Card className="mt-10 space-y-8 bg-gray-900 px-10 py-14 text-center flex flex-col grow isolate shadow-lg ring-1 ring-black/5 border-none backdrop-blur-sm text-white overflow-hidden font-roboto">
             <Meteors number={20} className="bg-[#18D1D4] z-10" />
             <CardContent>
               <ol role="list" className="space-y-8">

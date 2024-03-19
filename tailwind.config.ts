@@ -99,6 +99,7 @@ const config = {
       },
       fontFamily: {
         redhat: ["Red Hat Text", "sans-serif"],
+        roboto: ["Roboto", "sans-serif"], 
       },
     },
   },
