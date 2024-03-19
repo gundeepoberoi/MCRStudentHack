@@ -56,15 +56,22 @@ export default function FAQ() {
 
   return (
     <section id="faq" className="mt-48 mb-24 w-full z-10">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-4xl lg:pr-24">
+          <h2 className="font-display text-4xl font-medium tracking-tighter text-white sm:text-5xl">
+            Frequently Asked Questions
+          </h2>
+        </div>
+      </div>
       <div className="flex flex-wrap w-full text-white rounded-lg overflow-hidden">
         <div
           className={`${selectedId >= 0 ? "lg:w-5/12" : ""}
           w-full max-h-[40rem] overflow-auto scrollbar-hide backdrop-blur-sm
           pt-8 transition-all`}
         >
-          <h3 className="text-2xl text-center font-bold px-8 pb-4">
+          {/* <h3 className="text-2xl text-center font-bold px-8 pb-4">
             Frequently Asked Questions
-          </h3>
+          </h3> */}
           {faqQuestions.map((faq, i) => {
             return (
               <div
