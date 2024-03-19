@@ -15,7 +15,7 @@ const ScheduleHeader = ({
         <h2 className="font-display text-4xl font-medium tracking-tighter text-white sm:text-5xl text-center">
           {title}
         </h2>
-        <p className="mt-4 font-display text-2xl tracking-tight text-white">
+        <p className="mt-4 font-display text-2xl tracking-tight text-white text-right">
           {description}
         </p>
       </div>
