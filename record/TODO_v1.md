@@ -10,7 +10,8 @@ To-do:
 2. Text in webpage "About Us" (Make them whiter)
 3. Footer (colour, styling, information)
 4. General styling
-5. 
+5. Ensure text in cards have consistent font-colour and font-size
+6. 
 
 
 

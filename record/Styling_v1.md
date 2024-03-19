@@ -1,6 +1,20 @@
 # Created on 12/3/2024 by Jacob Yip
-# Last-edit: 12/3/2024 by Jacob Yip
+# Last-edit: 19/3/2024 by Jacob Yip
 # This file contains the record of styling webpages
+
+
+Font-size: 
+- Header: text-5xl
+- Sub-header: text-4xl
+- Text: text-lg
+
+
+Text-colour: 
+- General: white
+- Highlight: text-cyan-100
+
+Font-family: 
+- Roboto
 
 ------------------------------------------------------------------------------------------
 
@@ -30,8 +44,43 @@ faq.tsx:
 
 Date: 19/3/2024
 
-about.tsx: 
-1. 
+about.tsx (filename: index.tsx): 
+1. Change heading and text in "About Us" from pale blue to white
+2. Change font-family to Roboto
+3. 
+
+schedule.tsx: 
+1. Ensure text and header in "Schedule" have consistent font-family: Roboto
+2. 
+
+
+faq.tsx:
+1. Change font-family of text and header to Roboto
+2. 
+
+
+hero.tsx: 
+1. Change font-family of text in "Register Now" to Roboto
+2. Change font-size in "Register Now" to text-lg to ensure consistency
+3. Ensure colour of text in "Register Now" is the same as the word "Registration" in "Registration Closes in": text-cyan-100 which is also the colour of text in "About Us"
+4. Ensure font family of text in "Registration Closes in" is Roboto
+5. 
+
+
+navigation.tsx: 
+1. Ensure the text has the consistent font-family: Roboto
+2. Ensure the text has the same text colour: white
+3. 
+
+
+team.tsx (filename: index.tsx): 
+1. Change font-size of header from 4xl to 5xl to ensure consistent font-size for headers
+2. Change font-family of header to Roboto to ensure consistent font-family of text
+3. 
+
+tailwind.config.ts: 
+1. Add font family "roboto" after "redhat"
+2. 
 
 
 
