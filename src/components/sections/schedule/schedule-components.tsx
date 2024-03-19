@@ -27,7 +27,7 @@ const ScheduleHeader = ({
 const ScheduleLgScreenLayout = ({ data }: { data: ScheduleItems }) => {
   return (
     <div className="hidden lg:grid lg:grid-cols-2 lg:gap-x-8">
-      <div className="absolute inset-0 h-full w-full bg-gradient-to-r from-blue-500 to-teal-500 transform scale-[1.10] rounded-full blur-3xl -z-1 opacity-60" />
+      <div className="absolute inset-0 h-full w-full bg-gradient-to-r from-blue-500 to-teal-500 transform scale-[1.10] rounded-full blur-3xl -z-1 brightness-50" />
       {data.map((day, index) => (
         <div key={`date-${day.date}-${index}`} className="flex flex-col">
           <h3 className="text-2xl font-semibold tracking-tight z-10">
@@ -74,7 +74,7 @@ const ScheduleScreenLayout = ({ data }: { data: ScheduleItems }) => {
 
   return (
     <>
-      <div className="absolute inset-0 h-full w-full bg-gradient-to-r from-blue-500 to-teal-500 transform scale-110 rounded-full blur-3xl -z-1 opacity-60 lg:hidden" />
+      <div className="absolute inset-0 h-full w-full bg-gradient-to-r from-blue-500 to-teal-500 transform scale-110 rounded-full blur-3xl -z-1 brightness-50 lg:hidden" />
       <div className="mx-auto grid max-w-2xl grid-cols-1 gap-y-6 sm:grid-cols-2 lg:hidden">
         <div
           className="-mx-4 flex gap-x-4 gap-y-10 overflow-x-auto pb-4 pl-4 sm:mx-0 sm:flex-col sm:pb-0 sm:pl-0 sm:pr-8"
