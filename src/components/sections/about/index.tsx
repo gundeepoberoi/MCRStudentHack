@@ -37,7 +37,7 @@ export default function About() {
     <section id="about" className="my-24">
       <div className="about-wrapper min-w-xl px-8 md:px-16 py-8">
         <div className="about-overlay"></div>
-        <h1 className="text-5xl ml-8 text-white font-roboto font-bold">About</h1>
+        <h1 className="text-4xl ml-8 text-white font-bold">About</h1>
         <div className="flex flex-wrap items-stretch mt-8">
           <div className="w-full xl:w-5/12">
             <div className="max-w-[30rem] min-h-[20rem] mx-auto relative">
@@ -59,7 +59,7 @@ export default function About() {
             </div>
           </div>
           <div className="w-full xl:w-7/12 pt-8 xl:pl-8 xl:pt-0">
-            <p className="text-lg font-roboto text-white">
+            <p className="text-white">
               We are a part of UniCS, the Computer Science Society at the
               esteemed University of Manchester. Our mission is to foster unity
               among students through a diverse array of student-led events; our
@@ -72,7 +72,7 @@ export default function About() {
             </p>
           </div>
         </div>
-        <div className="flex flex-wrap justify-center gap-4 py-16 text-white font-roboto">
+        <div className="flex flex-wrap justify-center gap-4 py-16 text-white">
           <AboutTrophy
             year="2023"
             events={[{ title: "GreatUniHack", attendees: "200" }]}
