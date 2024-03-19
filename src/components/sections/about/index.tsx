@@ -58,8 +58,8 @@ export default function About() {
               />
             </div>
           </div>
-          <div className="w-full xl:w-7/12 pt-8 xl:pl-8 xl:pt-0 text-white">
-            <p className="text-lg font-roboto">
+          <div className="w-full xl:w-7/12 pt-8 xl:pl-8 xl:pt-0">
+            <p className="text-lg font-roboto text-white">
               We are a part of UniCS, the Computer Science Society at the
               esteemed University of Manchester. Our mission is to foster unity
               among students through a diverse array of student-led events; our
