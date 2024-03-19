@@ -1,9 +1,9 @@
 "use client";
 import dynamic from "next/dynamic";
-import Image from 'next/image';
-import { Button } from "../ui/moving-border";
-import { TypewriterEffectSmooth } from "../ui/typewriter-effect";
-const TimerContainer = dynamic(() => import("../ui/TimerContainer"), {
+import Image from "next/image";
+import { Button } from "../../ui/moving-border";
+import { TypewriterEffectSmooth } from "../../ui/typewriter-effect";
+const TimerContainer = dynamic(() => import("../../ui/TimerContainer"), {
   ssr: false,
 });
 
