@@ -59,7 +59,7 @@ about.tsx (filename: index.tsx):
 
 schedule.tsx: 
 1. Make sure the part "Schedule" is the updated version
-2. Allign header to centre
+2. Allign header and content to centre
 3. 
 
 
