@@ -1,13 +1,10 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 import {
   m,
   AnimatePresence,
-  useScroll,
-  useMotionValueEvent,
 } from "framer-motion";
 import { cn } from "@/lib/utils";
-import Link from "next/link";
 
 export const FloatingNav = ({
   navItems,
@@ -45,7 +42,7 @@ export const FloatingNav = ({
         )}
       >
         {navItems.map((navItem: any, idx: number) => (
-          <Link
+          <a
             key={`link=${idx}`}
             href={navItem.link}
             className={cn(
@@ -53,13 +50,13 @@ export const FloatingNav = ({
             )}
           >
             <span className="text-sm">{navItem.name}</span>
-          </Link>
+          </a>
         ))}
-        <Link href={mainItem.link} 
+        <a href={mainItem.link}
               className="border text-sm font-medium relative border-[#10F6D3] dark:border-white/[0.2] text-white hover:text-[#c0f0ea] px-4 py-2 rounded-full">
           
             <span>{mainItem.name}</span>
-        </Link>
+        </a>
       </m.div>
     </AnimatePresence>
   );

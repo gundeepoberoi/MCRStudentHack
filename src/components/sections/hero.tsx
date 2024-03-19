@@ -1,8 +1,8 @@
 "use client";
 import dynamic from "next/dynamic";
+import Image from 'next/image';
 import { Button } from "../ui/moving-border";
 import { TypewriterEffectSmooth } from "../ui/typewriter-effect";
-import Alt1 from "@/assets/logos/alt 1.svg";
 const TimerContainer = dynamic(() => import("../ui/TimerContainer"), {
   ssr: false,
 });
@@ -16,7 +16,13 @@ const Hero = () => {
       <>
         <div className="flex flex-col lg:flex-row justify-center items-center w-full gap-1 lg:gap-36">
           <div>
-            <Alt1 className="w-full transition ease-in-out delay-150 hover:scale-110 content-center" />
+            <Image
+              src={"/alt_1.png"}
+              width={600}
+              height={600}
+              alt={"Logo"}
+              className="w-full max-w-[500px] transition ease-in-out delay-150 hover:scale-110 content-center"
+            />
           </div>
           <div>
             <form action="https://apply.mcrstudenthack.com/">
