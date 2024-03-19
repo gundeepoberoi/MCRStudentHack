@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const faqQuestions = [
   {
@@ -54,11 +54,21 @@ const faqQuestions = [
 export default function FAQ() {
   const [selectedId, setSelectedId] = useState(-1);
 
+  useEffect(() => {
+    setTimeout(() => {
+      const answerDiv = document.getElementById("faq-answer");
+      if (answerDiv !== null && selectedId >= 0) {
+        if (answerDiv.getBoundingClientRect().bottom > window.innerHeight)
+          answerDiv.scrollIntoView(false);
+      }
+    }, 500);
+  }, [selectedId]);
+
   return (
-    <section id="faq" className="mt-24 mb-24 w-full z-10">
+    <section id="faq" className="pt-24 mb-24 w-full z-10">
       <div className="flex flex-wrap w-full text-white rounded-lg overflow-hidden">
         <div
-          className={`${selectedId >= 0 ? "lg:w-5/12" : ""}
+          className={`${selectedId >= 0 ? "lg:w-6/12" : ""}
           w-full max-h-[40rem] overflow-auto scrollbar-hide backdrop-blur-sm
           pt-8 transition-all`}
         >
@@ -74,8 +84,6 @@ export default function FAQ() {
                ${selectedId === i ? "bg-accent/30" : ""}`}
                 onClick={() => {
                   setSelectedId(i === selectedId ? -1 : i);
-                  const answerDiv = document.getElementById("faq-answer");
-                  if (answerDiv !== null) answerDiv.scrollIntoView();
                 }}
               >
                 <h3 className="text-lg">
@@ -90,7 +98,7 @@ export default function FAQ() {
           id="faq-answer"
           className={`${
             selectedId >= 0
-              ? "w-full opacity-100 lg:w-7/12"
+              ? "w-full opacity-100 lg:w-6/12"
               : "w-0 opacity-0 hidden"
           }
           bg-transparent backdrop-blur p-8 transition-all`}
