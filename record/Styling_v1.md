@@ -52,40 +52,41 @@ Date: 19/3/2024
 
 about.tsx (filename: index.tsx): 
 1. Change heading and text in "About Us" from pale blue to white
-2. Change font-family to Roboto
-3. Bold header
+2. Change font-family to Roboto (Not working when using default font-style)
+3. Change font-size of Header from 4xl to 5xl (Looks much nicer if it is bigger)
 4. 
 
 
 schedule.tsx: 
-1. Ensure text and header in "Schedule" have consistent font-family: Roboto
-2. 
+1. Make sure the part "Schedule" is the updated version
+2. Allign header to centre
+3. 
 
 
 faq.tsx:
-1. Change font-family of text and header to Roboto
-2. 
+1. Change font-family of text and header to Roboto (Not working when using default font-style)
+2. Change font-size of "Answer" from 4xl to 2xl
+3. Change font-styles of Header and "Answer" to font-medium
+4. 
 
 
 hero.tsx: 
-1. Change font-family of text in "Register Now" to Roboto
+1. Change font-family of text in "Register Now" to Roboto (Not working when using default font-style)
 2. Change font-size in "Register Now" to text-lg to ensure consistency
 3. Ensure colour of text in "Register Now" is the same as the word "Registration" in "Registration Closes in": text-cyan-100 which is also the colour of text in "About Us"
-4. Ensure font family of text in "Registration Closes in" is Roboto
-5. 
+4. 
 
 
 navigation.tsx: 
-1. Ensure the text has the consistent font-family: Roboto
+1. Ensure the text has the consistent font-family: Roboto (Not working when using default font-style)
 2. Ensure the text has the same text colour: white
 3. 
 
 
 team.tsx (filename: index.tsx): 
 1. Change font-size of header to 4xl to ensure consistent font-size for headers
-2. Change font-family of header to Roboto to ensure consistent font-family of text
-3. Make the header bold: Change from font-medium to font-bold
-4. 
+2. Change font-family of header to Roboto to ensure consistent font-family of text (Not working when using default font-style)
+3. 
 
 
 layout.tsx: 
