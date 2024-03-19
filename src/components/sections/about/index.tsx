@@ -37,7 +37,7 @@ export default function About() {
     <section id="about" className="my-24">
       <div className="about-wrapper min-w-xl px-8 md:px-16 py-8">
         <div className="about-overlay"></div>
-        <h1 className="text-4xl ml-8 text-white font-bold">About</h1>
+        <h1 className="text-5xl ml-8 text-white font-bold text-center">About</h1>
         <div className="flex flex-wrap items-stretch mt-8">
           <div className="w-full xl:w-5/12">
             <div className="max-w-[30rem] min-h-[20rem] mx-auto relative">
