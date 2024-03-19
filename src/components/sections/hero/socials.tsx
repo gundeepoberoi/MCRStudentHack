@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { FaInstagram } from "react-icons/fa";
 import { FaLinkedin, FaXTwitter } from "react-icons/fa6";
+import { MdAlternateEmail } from "react-icons/md";
 
 export default function Socials() {
     return (
@@ -14,6 +15,10 @@ export default function Socials() {
 
             <Link href={"https://twitter.com/UniCSHackathons"} target="_LINK" rel="noreferrer">
                 <FaXTwitter size={40} className="hover:text-cyan-300 transition duration-500" />
+            </Link>
+
+            <Link href={"mailto:hackathons@unicsmcr.com"} target="_LINK" rel="noreferrer">
+                <MdAlternateEmail size={40} className="hover:text-cyan-300 transition duration-500" />
             </Link>
         </div>
     )
