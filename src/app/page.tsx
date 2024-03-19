@@ -5,8 +5,8 @@ import FAQ from "@/components/sections/faq";
 import Navigation from "@/components/sections/navigation";
 import Schedule from "@/components/sections/schedule";
 import Team from "@/components/sections/team";
-
 import Hero from "@/components/sections/hero";
+
 import LightBackground from "@/components/ui/light-background";
 import { LazyMotion } from "framer-motion";
 
