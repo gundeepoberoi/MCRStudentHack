@@ -2,8 +2,9 @@
 # Last-edit: 12/3/2024 by Jacob Yip
 # This file contains the record of styling webpages
 
+------------------------------------------------------------------------------------------
 
-
+Date: 12/3/2024
 
 about.tsx: 
 1. Would it be possible to make the image and text in About have the same horizontal level? Right now, the image is slightly higher than the paragraph
@@ -18,10 +19,19 @@ schedule.tsx:
 5. 
 
 
-
 faq.tsx: 
 1. Change font size of "Frequently Asked Questions" from 2xl to 5xl (Consistent with About)
 2. Suggestion: Should we change the font size of > next to the question from text-xl to text-lg to match the question text style? 
 3. Change font size of subheading "Answer" from 2xl to 4xl (Consistent with 12th March)
 4. Add text-lg to the contents under subheading "Answer"
 5. 
+
+------------------------------------------------------------------------------------------
+
+Date: 19/3/2024
+
+about.tsx: 
+1. 
+
+
+
