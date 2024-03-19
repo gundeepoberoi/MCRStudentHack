@@ -57,30 +57,6 @@ export default function FAQ() {
   return (
     <section id="faq" className="mt-48 mb-24 w-full z-10">
       <div className="flex flex-wrap w-full text-white rounded-lg overflow-hidden">
-<<<<<<< HEAD
-        <div className={`${(selectedId >= 0) ? 'lg:w-5/12' : ''}
-          w-full max-h-[40rem] overflow-auto scrollbar-hide
-          bg-black/30 pt-8 transition-all`}>
-         <h3 className="text-5xl text-center font-bold px-8 pb-4">Frequently Asked Questions</h3>
-         {faqQuestions.map((faq, i) => {
-           return (
-             <div key={`faq-q-${i}`}
-               className={`cursor-pointer hover:bg-accent/20 px-8 py-2
-               flex justify-between items-center
-               ${(selectedId === i) ? 'bg-accent/30' : ''}`}
-               onClick={() => {
-                 setSelectedId(i === selectedId ? -1 : i);
-               }}>
-              <h3 className="text-lg">{i+1}. {faq.question}</h3>
-              <h3 className="text-lg">&#8250;</h3>
-            </div>
-           );
-         })}
-        </div>
-        <div className={`${(selectedId >= 0) ? 'lg:w-7/12' : 'hidden'} w-full bg-primary p-8 transition-all`}>
-          <h3 className="text-4xl font-bold pb-4">Answer</h3>
-          <p className="whitespace-pre-wrap text-lg">
-=======
         <div
           className={`${selectedId >= 0 ? "lg:w-5/12" : ""}
           w-full max-h-[40rem] overflow-auto scrollbar-hide backdrop-blur-sm
@@ -121,7 +97,6 @@ export default function FAQ() {
         >
           <h3 className="text-2xl font-bold pb-4">Answer</h3>
           <p className="whitespace-pre-wrap">
->>>>>>> develop
             {selectedId >= 0 ? faqQuestions[selectedId].answer : ""}
           </p>
         </div>
