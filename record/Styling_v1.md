@@ -9,9 +9,14 @@ Font-size:
 - Text: text-lg
 
 
+Font-style: 
+- Header: bold
+
+
 Text-colour: 
 - General: white
 - Highlight: text-cyan-100
+
 
 Font-family: 
 - Roboto
@@ -47,7 +52,8 @@ Date: 19/3/2024
 about.tsx (filename: index.tsx): 
 1. Change heading and text in "About Us" from pale blue to white
 2. Change font-family to Roboto
-3. 
+3. Bold header
+4. 
 
 
 schedule.tsx: 
@@ -77,7 +83,8 @@ navigation.tsx:
 team.tsx (filename: index.tsx): 
 1. Change font-size of header from 4xl to 5xl to ensure consistent font-size for headers
 2. Change font-family of header to Roboto to ensure consistent font-family of text
-3. 
+3. Make the header bold: Change from font-medium to font-bold
+4. 
 
 
 tailwind.config.ts: 
