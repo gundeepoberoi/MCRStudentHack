@@ -49,6 +49,7 @@ about.tsx (filename: index.tsx):
 2. Change font-family to Roboto
 3. 
 
+
 schedule.tsx: 
 1. Ensure text and header in "Schedule" have consistent font-family: Roboto
 2. 
@@ -78,9 +79,8 @@ team.tsx (filename: index.tsx):
 2. Change font-family of header to Roboto to ensure consistent font-family of text
 3. 
 
+
 tailwind.config.ts: 
 1. Add font family "roboto" after "redhat"
 2. 
-
-
 
