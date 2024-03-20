@@ -1,5 +1,5 @@
 # Created on 12/3/2024 by Jacob Yip
-# Last-edit: 19/3/2024 by Jacob Yip
+# Last-edit: 20/3/2024 by Jacob Yip
 # This file contains the record of styling webpages
 
 
@@ -54,12 +54,22 @@ about.tsx (filename: index.tsx):
 1. Change heading and text in "About Us" from pale blue to white
 2. Change font-family to Roboto (Not working when using default font-style)
 3. Change font-size of Header from 4xl to 5xl (Looks much nicer if it is bigger)
-4. 
+4. Change header text from "About" to "About Us"
+5. Remove font-bold in AboutTrophy event.title to remove the glow of the titles of events
+6. 
 
 
-schedule.tsx: 
+schedule.tsx (filename: index.tsx): 
 1. Make sure the part "Schedule" is the updated version
 2. Allign header and content to centre
+3. Update the margin of a root div from mt-14 to mt-7
+4. Add lg:mt-14 in the root div
+5. 
+
+
+schedule-components.tsx: 
+1. Remove px-4 in <div></div> containing title and description of schedule
+2. Move text-center of title and description to div for cleaner code
 3. 
 
 
