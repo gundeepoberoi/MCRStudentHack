@@ -1,6 +1,8 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Markdown from "react-markdown";
+import remarkGfm from "remark-gfm";
 
 const faqQuestions = [
   {
@@ -9,7 +11,7 @@ const faqQuestions = [
   },
   {
     question: `How do I take part in the hackathon?`,
-    answer: `Just fill out the application form HERE and we'll get back to you over Easter.`,
+    answer: `Just fill out the application form **[HERE](https://apply.mcrstudenthack.com/)** and we'll get back to you over Easter.`,
   },
   {
     question: `When and where will the hackathon take place?`,
@@ -35,7 +37,7 @@ const faqQuestions = [
     question: `Won't I get hungry?!`,
     answer: `We got your back - we'll provide everyone with lunch, dinner, a midnight snack and brunch (covering all dietary requirements), as well as infinite* snacks and drinks throughout the duration. A full menu will be available before the hackathon.
 
-*not actually infinite snacks. just a lot. `,
+_*not actually infinite snacks. just a lot._`,
   },
   {
     question: `Is accommodation / travel reimbursements provided?`,
@@ -103,10 +105,12 @@ export default function FAQ() {
           }
           bg-transparent backdrop-blur p-8 transition-all`}
         >
-          <h3 className="text-2xl font-medium pb-4">Answer</h3>
-          <p className="whitespace-pre-wrap text-lg">
-            {selectedId >= 0 ? faqQuestions[selectedId].answer : ""}
-          </p>
+          <h3 className="text-2xl font-bold pb-4">Answer</h3>
+          <div className="whitespace-pre-wrap text-lg">
+            <Markdown remarkPlugins={[remarkGfm]}>
+              {selectedId >= 0 ? faqQuestions[selectedId].answer : ""}
+            </Markdown>
+          </div>
         </div>
       </div>
     </section>
