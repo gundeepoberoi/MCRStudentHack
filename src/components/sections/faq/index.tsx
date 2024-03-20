@@ -55,14 +55,14 @@ export default function FAQ() {
   const [selectedId, setSelectedId] = useState(-1);
 
   return (
-    <section id="faq" className="mt-48 mb-24 w-full z-10">
+    <section id="faq" className="mt-24 mb-24 w-full z-10">
       <div className="flex flex-wrap w-full text-white rounded-lg overflow-hidden">
         <div
           className={`${selectedId >= 0 ? "lg:w-5/12" : ""}
           w-full max-h-[40rem] overflow-auto scrollbar-hide backdrop-blur-sm
           pt-8 transition-all`}
         >
-          <h3 className="text-2xl text-center font-bold px-8 pb-4">
+          <h3 className="text-4xl text-center font-medium px-8 pb-4">
             Frequently Asked Questions
           </h3>
           {faqQuestions.map((faq, i) => {
@@ -95,8 +95,8 @@ export default function FAQ() {
           }
           bg-transparent backdrop-blur p-8 transition-all`}
         >
-          <h3 className="text-2xl font-bold pb-4">Answer</h3>
-          <p className="whitespace-pre-wrap">
+          <h3 className="text-2xl font-medium pb-4">Answer</h3>
+          <p className="whitespace-pre-wrap text-lg">
             {selectedId >= 0 ? faqQuestions[selectedId].answer : ""}
           </p>
         </div>
