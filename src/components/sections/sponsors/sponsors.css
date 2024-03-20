@@ -1,14 +1,22 @@
-.sponsors {
-    background-color: black;
+#sponsors {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    margin: 0;
+    height: 70vw;
+    margin: auto;
+    position: relative;
+}
+#divider{
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12%;
+}
+#heading{
+    margin-bottom: 32%;
 }
 .sun {
-    width: 13vmax;
-    height: 13vmax;
+    width: 15vmax;
+    height: 15vmax;
     background-image: url('../../../assets/images/sun.gif');
     background-position: center;
     background-size: 150%;
@@ -17,6 +25,28 @@
     position: relative;
 }
 .planet {
+    width: 12vmax;
+    height: 12vmax;
+    background-image: url('../../../assets/images/booking.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    position: absolute;
+    animation: revolve 20s linear infinite;
+}
+.planet-1 {
+    width: 11vmax;
+    height: 11vmax;
+    background-image: url('../../../assets/images/nike.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    position: absolute;
+    animation: revolve 20s linear infinite;
+}
+.planet-2 {
     width: 10vmax;
     height: 10vmax;
     background-image: url('../../../assets/images/nike.jpg');
@@ -27,29 +57,24 @@
     position: absolute;
     animation: revolve 20s linear infinite;
 }
-.planet-1 {
-    width: 9vmax;
-    height: 9vmax;
-    background-image: url('../../../assets/images/nike.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 50%;
-    position: absolute;
-    animation: revolve 20s linear infinite;
-}
-.planet-2 {
-    width: 8vmax;
-    height: 8vmax;
-    background-image: url('../../../assets/images/nike.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 50%;
-    position: absolute;
-    animation: revolve 20s linear infinite;
-}
 @keyframes revolve {
-    from { transform: rotate(0deg) translate(18vmax) rotate(0deg); }
-    to { transform: rotate(360deg) translate(18vmax) rotate(-360deg); }
+    from { transform: rotate(0deg) translate(22vmax) rotate(0deg); }
+    to { transform: rotate(360deg) translate(22vmax) rotate(-360deg); }
+}
+@media (max-width: 800px) {
+    #sponsors {
+        height: 100vw;
+    }
+    #divider{
+        margin-top: 15vw;
+    }
+    #heading{
+        margin-top: 10vw;
+    }
+}
+@media (max-width: 600px) {
+    @keyframes revolve {
+        from { transform: rotate(0deg) translate(20vmax) rotate(0deg); }
+        to { transform: rotate(360deg) translate(20vmax) rotate(-360deg); }
+    }
 }
