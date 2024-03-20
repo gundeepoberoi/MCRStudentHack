@@ -206,7 +206,7 @@ function AboutCarousel() {
           <CarouselItem key={index} className="">
             <div className="h-1/1 relative items-center">
               <Image
-                className="w-1/1 h-1/1 flex items-center justtify-center"
+                className="w-1/1 h-1/1 flex items-center justify-center"
                 // className="w-5/6 h-full flex-auto absolute right-6 bottom-1/2 translate-y-1/5"
                 src={accessImage(index)}
                 alt="placeholder"
