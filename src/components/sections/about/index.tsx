@@ -1,10 +1,41 @@
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import "./about.css";
 
 import Image0 from "@/assets/images/about-image-0.jpg";
 import Image1 from "@/assets/images/about-image-1.jpg";
 import Image2 from "@/assets/images/about-image-2.jpg";
 import TrophyImg from "@/assets/images/about-trophy.png";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
+
+/**
+ * List of keys of images
+ */
+type Keys = "-1" | "0" | "1" | "2";
+
+/**
+ * The dictionary/map for mapping the source of image with index
+ * Used in AboutCarousel
+ * How to ensure that the key entered must be valid? 
+ */
+const images: Record<number, StaticImageData> = {
+  0: Image0, 
+  1: Image1, 
+  2: Image2, 
+  "-1": Image0    // TODO Can create a black image
+} satisfies Record<Keys, StaticImageData>;
+
+
+/**
+ * A function used to access the above map/dictionary
+ * We write "keyof typeof images" instead of "number" because we are using TypeScript, which requires very tight type to access object's properties
+ */
+const accessImage = (i: keyof typeof images) => {
+  if(images.hasOwnProperty(i)) {
+    return images[i];
+  } else {
+    return images[-1];
+  }
+};
 
 function AboutTrophy(props: {
   year: string;
@@ -39,9 +70,11 @@ export default function About() {
         <div className="about-overlay"></div>
         <h1 className="text-5xl ml-8 text-white font-bold text-center">About Us</h1>
         <div className="flex flex-wrap items-stretch mt-8">
-          <div className="w-full xl:w-5/12">
-            <div className="max-w-[30rem] min-h-[20rem] mx-auto relative">
-              <Image
+          <div className="w-full xl:w-5/12 mx-auto">
+            <div className="max-w-[30rem] min-h-[20rem] mx-auto relative pr-6">
+              {
+              <AboutCarousel />
+              /* <Image
                 className="w-1/2 absolute top-0"
                 src={Image0}
                 alt="placeholder"
@@ -55,7 +88,7 @@ export default function About() {
                 className="w-1/2 absolute right-4 bottom-1/2 translate-y-1/2"
                 src={Image2}
                 alt="placeholder"
-              />
+              /> */}
             </div>
           </div>
           <div className="w-full xl:w-7/12 pt-8 xl:pl-8 xl:pt-0">
@@ -72,7 +105,7 @@ export default function About() {
             </p>
           </div>
         </div>
-        <div className="flex flex-wrap justify-center gap-4 py-16 text-white">
+        <div className="flex flex-wrap justify-center gap-4 py-12 text-white">
           <AboutTrophy
             year="2023"
             events={[{ title: "GreatUniHack", attendees: "200" }]}
@@ -146,5 +179,30 @@ export default function About() {
         </div>
       </div>
     </section>
+  );
+}
+
+
+
+function AboutCarousel() {
+  return (
+    <Carousel className="">
+      <CarouselContent>
+        {Array.from({ length: 3 }).map((_, index) => (
+          <CarouselItem key={index} className="">
+            <div className="h-1/1 relative items-center">
+              <Image
+                className="w-1/1 h-1/1 flex items-center justtify-center"
+                // className="w-5/6 h-full flex-auto absolute right-6 bottom-1/2 translate-y-1/5"
+                src={accessImage(index)}
+                alt="placeholder"
+              />
+            </div>
+          </CarouselItem>
+        ))}
+      </CarouselContent>
+      <CarouselPrevious />
+      <CarouselNext />
+    </Carousel>
   );
 }
