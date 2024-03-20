@@ -23,7 +23,7 @@ function AboutTrophy(props: {
       {props.events.map((event: { title: string; attendees: string }, i) => {
         return (
           <div key={`trophy-event-${i}`}>
-            <p className="text-xs font-bold break-words">{event.title}</p>
+            <p className="text-xs break-words">{event.title}</p>
             <p className="text-xs">- {event.attendees} attendees</p>
           </div>
         );
