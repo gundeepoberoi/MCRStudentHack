@@ -77,7 +77,8 @@ faq.tsx:
 1. Change font-family of text and header to Roboto (Not working when using default font-style)
 2. Change font-size of "Answer" from 4xl to 2xl
 3. Change font-styles of Header and "Answer" to font-medium
-4. 
+4. Change margin size of root div from mt-40 to mt-24
+5. 
 
 
 hero.tsx: 
