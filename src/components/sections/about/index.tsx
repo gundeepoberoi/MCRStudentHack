@@ -4,13 +4,17 @@ import "./about.css";
 import Image0 from "@/assets/images/about-image-0.jpg";
 import Image1 from "@/assets/images/about-image-1.jpg";
 import Image2 from "@/assets/images/about-image-2.jpg";
+import Image3 from "@/assets/images/about-image-3.jpg";
+import Image4 from "@/assets/images/about-image-4.jpg";
+import Image5 from "@/assets/images/about-image-5.jpg";
+import Image6 from "@/assets/images/about-image-6.jpg";
 import TrophyImg from "@/assets/images/about-trophy.png";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 
 /**
  * List of keys of images
  */
-type Keys = "-1" | "0" | "1" | "2";
+type Keys = "-1" | "0" | "1" | "2" | "3" | "4" | "5" | "6";
 
 /**
  * The dictionary/map for mapping the source of image with index
@@ -21,6 +25,10 @@ const images: Record<number, StaticImageData> = {
   0: Image0, 
   1: Image1, 
   2: Image2, 
+  3: Image3, 
+  4: Image4, 
+  5: Image5, 
+  6: Image6, 
   "-1": Image0    // TODO Can create a black image
 } satisfies Record<Keys, StaticImageData>;
 
@@ -36,6 +44,12 @@ const accessImage = (i: keyof typeof images) => {
     return images[-1];
   }
 };
+
+
+/**
+ * Number of images to be displayed in carousel
+ */
+const imageNum = 7;
 
 function AboutTrophy(props: {
   year: string;
@@ -188,7 +202,7 @@ function AboutCarousel() {
   return (
     <Carousel className="">
       <CarouselContent>
-        {Array.from({ length: 3 }).map((_, index) => (
+        {Array.from({ length: imageNum }).map((_, index) => (
           <CarouselItem key={index} className="">
             <div className="h-1/1 relative items-center">
               <Image
