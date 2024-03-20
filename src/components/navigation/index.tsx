@@ -11,12 +11,12 @@ const navItems = [
     link: "#schedule",
   },
   {
-    name: "Our Crew",
-    link: "#team",
-  },
-  {
     name: "FAQs",
     link: "#faq",
+  },
+  {
+    name: "Our Crew",
+    link: "#team",
   },
 ];
 
