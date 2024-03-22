@@ -37,7 +37,7 @@ const scheduleList: ScheduleItems = [
       {
         time: "12:30PM",
         title: "Lunch",
-        description: "🍔🍕🥪",
+        description: "🍱🍜🥟",
       },
       {
         time: "01:00PM Onwards",
@@ -47,12 +47,7 @@ const scheduleList: ScheduleItems = [
       {
         time: "06:00PM",
         title: "Dinner",
-        description: "🍔🍕🥪",
-      },
-      {
-        time: "12:00AM",
-        title: "Midnight Snack",
-        description: "🍔🍕🥪",
+        description: "🌯🥙🥤",
       },
     ],
   },
@@ -62,6 +57,11 @@ const scheduleList: ScheduleItems = [
     desc: "Day 2 of hackathon.",
     events: [
       {
+        time: "12:00AM",
+        title: "Midnight Snack",
+        description: "🍕🍪🧋",
+      },
+      {
         time: "01:00AM Onwards",
         title: "Leisure Activities",
         description: "Fun activities to keep you awake.",
@@ -69,7 +69,7 @@ const scheduleList: ScheduleItems = [
       {
         time: "08:00AM",
         title: "Breakfast",
-        description: "🍔🍕🥪",
+        description: "🥨🥐☕",
       },
       {
         time: "10:00AM - 12:00PM",
@@ -79,7 +79,7 @@ const scheduleList: ScheduleItems = [
       {
         time: "12:30PM",
         title: "Lunch and Judging",
-        description: "🍔🍕🥪 and judging begins",
+        description: "🍱🍜🥟 and judging begins",
       },
       {
         time: "03:00PM - 04:00PM",
