@@ -130,7 +130,7 @@ const members: Member[] = [
   {
     name: "Dhruv S.",
     role: "Dev",
-    image: "/team/dhruv.png",
+    image: "/team/dhruv.jpeg",
     link: "https://www.linkedin.com/in/dsio/",
   },
 ];

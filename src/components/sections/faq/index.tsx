@@ -72,7 +72,7 @@ export default function FAQ() {
         Frequently Asked Questions
       </h2>
 
-      <div className="flex flex-wrap w-full text-white rounded-lg overflow-hidden">
+      <div className="flex flex-wrap w-full text-white rounded-lg overflow-hidden mt-4">
         <div
           className={`${selectedId >= 0 ? "lg:w-6/12" : ""}
           w-full max-h-[40rem] overflow-auto scrollbar-hide backdrop-blur-sm
