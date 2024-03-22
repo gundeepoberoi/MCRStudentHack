@@ -51,7 +51,6 @@ const Hero = () => {
 
         <Socials />
       </>
-      <Socials />
 
     </section>
   );
