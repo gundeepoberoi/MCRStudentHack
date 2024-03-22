@@ -15,7 +15,7 @@ export default function Schedule() {
         title="Schedule"
         description="Our hackathons aren't just 24 hours of straight coding - there'll be many workshops, mini-games and events for everyone to have fun and learn!"
       />
-      <div className="relative mt-14 sm:mt-24">
+      <div className="relative mt-7 lg:mt-14 sm:mt-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative">
           <div className="mx-auto grid max-w-2xl grid-cols-1 gap-y-6 sm:grid-cols-2 lg:hidden"></div>
           <ScheduleLgScreenLayout data={scheduleList} />

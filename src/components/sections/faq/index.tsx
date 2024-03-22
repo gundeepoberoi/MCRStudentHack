@@ -1,6 +1,8 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import Markdown from "react-markdown";
+import remarkGfm from "remark-gfm";
 
 const faqQuestions = [
   {
@@ -9,7 +11,7 @@ const faqQuestions = [
   },
   {
     question: `How do I take part in the hackathon?`,
-    answer: `Just fill out the application form HERE and we'll get back to you over Easter.`,
+    answer: `Just fill out the application form **[HERE](https://apply.mcrstudenthack.com/)** and we'll get back to you over Easter.`,
   },
   {
     question: `When and where will the hackathon take place?`,
@@ -35,7 +37,7 @@ const faqQuestions = [
     question: `Won't I get hungry?!`,
     answer: `We got your back - we'll provide everyone with lunch, dinner, a midnight snack and brunch (covering all dietary requirements), as well as infinite* snacks and drinks throughout the duration. A full menu will be available before the hackathon.
 
-*not actually infinite snacks. just a lot. `,
+_*not actually infinite snacks. just a lot._`,
   },
   {
     question: `Is accommodation / travel reimbursements provided?`,
@@ -54,15 +56,25 @@ const faqQuestions = [
 export default function FAQ() {
   const [selectedId, setSelectedId] = useState(-1);
 
+  useEffect(() => {
+    setTimeout(() => {
+      const answerDiv = document.getElementById("faq-answer");
+      if (answerDiv !== null && selectedId >= 0) {
+        if (answerDiv.getBoundingClientRect().bottom > window.innerHeight)
+          answerDiv.scrollIntoView(false);
+      }
+    }, 500);
+  }, [selectedId]);
+
   return (
-    <section id="faq" className="mt-48 mb-24 w-full z-10">
+    <section id="faq" className="mt-24 mb-24 w-full z-10">
       <h2 className="font-display text-4xl font-medium tracking-tighter text-white sm:text-5xl text-center">
         Frequently Asked Questions
       </h2>
 
       <div className="flex flex-wrap w-full text-white rounded-lg overflow-hidden">
         <div
-          className={`${selectedId >= 0 ? "lg:w-5/12" : ""}
+          className={`${selectedId >= 0 ? "lg:w-6/12" : ""}
           w-full max-h-[40rem] overflow-auto scrollbar-hide backdrop-blur-sm
           pt-8 transition-all`}
         >
@@ -75,8 +87,6 @@ export default function FAQ() {
                ${selectedId === i ? "bg-accent/30" : ""}`}
                 onClick={() => {
                   setSelectedId(i === selectedId ? -1 : i);
-                  const answerDiv = document.getElementById("faq-answer");
-                  if (answerDiv !== null) answerDiv.scrollIntoView();
                 }}
               >
                 <h3 className="text-lg">
@@ -91,15 +101,17 @@ export default function FAQ() {
           id="faq-answer"
           className={`${
             selectedId >= 0
-              ? "w-full opacity-100 lg:w-7/12"
+              ? "w-full opacity-100 lg:w-6/12"
               : "w-0 opacity-0 hidden"
           }
           bg-transparent backdrop-blur p-8 transition-all`}
         >
           <h3 className="text-2xl font-bold pb-4">Answer</h3>
-          <p className="whitespace-pre-wrap">
-            {selectedId >= 0 ? faqQuestions[selectedId].answer : ""}
-          </p>
+          <div className="whitespace-pre-wrap text-lg">
+            <Markdown remarkPlugins={[remarkGfm]}>
+              {selectedId >= 0 ? faqQuestions[selectedId].answer : ""}
+            </Markdown>
+          </div>
         </div>
       </div>
     </section>
