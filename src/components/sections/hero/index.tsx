@@ -28,7 +28,7 @@ const Hero = () => {
           <div>
             <form action="https://apply.mcrstudenthack.com/">
               <input type="hidden" name="r" id="r" value="apply" />
-              <Button type="submit">Register Now</Button>
+              <Button className="text-cyan-100 text-lg" type="submit">Register Now</Button>
             </form>
           </div>
         </div>
@@ -48,6 +48,8 @@ const Hero = () => {
           </div>
           <TimerContainer currentDate={new Date()} />
         </div>
+
+        <Socials />
       </>
       <Socials />
 

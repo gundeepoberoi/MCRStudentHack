@@ -23,7 +23,7 @@ function AboutTrophy(props: {
       {props.events.map((event: { title: string; attendees: string }, i) => {
         return (
           <div key={`trophy-event-${i}`}>
-            <p className="text-xs font-bold break-words">{event.title}</p>
+            <p className="text-xs break-words">{event.title}</p>
             <p className="text-xs">- {event.attendees} attendees</p>
           </div>
         );
@@ -34,10 +34,10 @@ function AboutTrophy(props: {
 
 export default function About() {
   return (
-    <section id="about" className="my-24">
+    <section id="about" className="pt-12 my-24 z-50">
       <div className="about-wrapper min-w-xl px-8 md:px-16 py-8">
         <div className="about-overlay"></div>
-        <h1 className="text-5xl ml-8">About</h1>
+        <h1 className="text-5xl ml-3 text-white font-bold text-center">About Us</h1>
         <div className="flex flex-wrap items-stretch mt-8">
           <div className="w-full xl:w-5/12">
             <div className="max-w-[30rem] min-h-[20rem] mx-auto relative">
@@ -59,7 +59,7 @@ export default function About() {
             </div>
           </div>
           <div className="w-full xl:w-7/12 pt-8 xl:pl-8 xl:pt-0">
-            <p className="text-lg">
+            <p className="text-white">
               We are a part of UniCS, the Computer Science Society at the
               esteemed University of Manchester. Our mission is to foster unity
               among students through a diverse array of student-led events; our
@@ -72,7 +72,7 @@ export default function About() {
             </p>
           </div>
         </div>
-        <div className="flex flex-wrap justify-center gap-4 py-16">
+        <div className="flex flex-wrap justify-center gap-4 py-16 text-white">
           <AboutTrophy
             year="2023"
             events={[{ title: "GreatUniHack", attendees: "200" }]}
