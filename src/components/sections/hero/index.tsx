@@ -3,6 +3,7 @@ import dynamic from "next/dynamic";
 import Image from "next/image";
 import { Button } from "../../ui/moving-border";
 import { TypewriterEffectSmooth } from "../../ui/typewriter-effect";
+import Socials from "./socials";
 const TimerContainer = dynamic(() => import("../../ui/TimerContainer"), {
   ssr: false,
 });
@@ -16,7 +17,7 @@ const Hero = () => {
       <div className="flex flex-col lg:flex-row justify-center items-center w-full gap-1 lg:gap-36">
         <div>
           <Image
-            src={"/alt_1.png"}
+            src={"/alt_2.png"}
             width={600}
             height={600}
             alt={"Logo"}
@@ -52,6 +53,8 @@ const Hero = () => {
         </div>
         <TimerContainer currentDate={new Date()} />
       </div>
+
+      <Socials />
     </section>
   );
 };

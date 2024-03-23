@@ -8,7 +8,7 @@ import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
 export default function Team() {
   const members_split = getSplitMembers();
   return (
-    <section id="team" className="w-full z-10 mt-8">
+    <section id="team" className="w-full z-50 mt-8">
       <h2 className="font-display text-4xl font-medium tracking-tighter text-white sm:text-5xl text-center">
         Our Crew
       </h2>
@@ -36,14 +36,21 @@ export default function Team() {
             })}
           </InfiniteMovingCards>
         </div>
+        {members_split[1].map((member, index) => {
+              return (
+                <li key={index} className="w-[15vw] max-w-[200px] aspect-[3/4]">
+                  <Member flip={false} {...member} />
+                </li>
+              );
+            })}
       </div>
 
       <div className="md:hidden">
         <div className="rounded-md grid grid-cols-1 min-[375px]:grid-cols-2 gap-4">
           {Members.map((member, index) => {
             return (
-              <div key={index} className="justify-self-center row-auto w-[70vw] min-[375px]:w-[35vw]">
-                <Member flip={true} {...member} />
+              <div key={index} className="justify-self-center row-auto w-[70vw] min-[375px]:w-[35vw] aspect-[3/4] mt-10">
+                <Member flip={false} {...member} />
               </div>
             );
           })}
