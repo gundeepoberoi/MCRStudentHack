@@ -1,5 +1,9 @@
 import { scheduleList } from "@/lib/schedule";
-import { ScheduleHeader, ScheduleLgScreenLayout } from "./schedule-components";
+import {
+  ScheduleHeader,
+  ScheduleLgScreenLayout,
+  ScheduleScreenLayout,
+} from "./schedule-components";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { RxExclamationTriangle } from "react-icons/rx";
 import { IconContext } from "react-icons";
@@ -14,11 +18,11 @@ export default function Schedule() {
       <div className="relative mt-7 lg:mt-14 sm:mt-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative">
           <div className="mx-auto grid max-w-2xl grid-cols-1 gap-y-6 sm:grid-cols-2 lg:hidden"></div>
-          {/* <ScheduleLgScreenLayout data={scheduleList} /> */}
-          <div className="absolute inset-0 h-full w-full bg-gradient-to-r from-blue-500 to-teal-500 transform scale-[1.10] rounded-full blur-3xl -z-1 opacity-60" />
+          <ScheduleLgScreenLayout data={scheduleList} />
+          <ScheduleScreenLayout data={scheduleList} />
 
           {/* Alert Component: needs to be removed once the section is complete */}
-          <Alert
+          {/* <Alert
             variant={"destructive"}
             className="text-xs md:font-medium md:text-lg backdrop-blur-sm text-[#10F6D3] border-[#10F6D3]"
           >
@@ -29,7 +33,7 @@ export default function Schedule() {
             <AlertDescription>
               We are working on the schedule. Check back later for updates.
             </AlertDescription>
-          </Alert>
+          </Alert> */}
         </div>
       </div>
     </section>
