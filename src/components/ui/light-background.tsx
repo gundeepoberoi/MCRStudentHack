@@ -76,6 +76,6 @@ export default function LightBackground() {
   }, []);
 
   return (
-    <canvas ref={canvasRef} className="overflow-hidden" />
+    <canvas ref={canvasRef} className="overflow-hidden -z-50" />
   );
 }
