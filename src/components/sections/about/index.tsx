@@ -85,7 +85,7 @@ export default function About() {
         <h1 className="text-2xl md:text-5xl ml-8 text-white font-bold text-center">About Us</h1>
         <div className="flex flex-wrap items-stretch mt-8">
           <div className="w-full xl:w-5/12 mx-auto">
-            <div className="max-w-[30rem] min-h-[20rem] mx-auto relative pr-6">
+            <div className="max-w-[30rem] min-h-[5rem] sm:min-h-[20rem] mx-auto relative px-6 sm:pr-6 sm:px-0">
               {
               <AboutCarousel />
               /* <Image
@@ -105,7 +105,7 @@ export default function About() {
               /> */}
             </div>
           </div>
-          <div className="w-full xl:w-7/12 pt-8 xl:pl-8 xl:pt-0">
+          <div className="w-full xl:w-7/12 pt-0 sm:pt-8 xl:pl-8 xl:pt-0">
             <p className="text-white">
               We are a part of UniCS, the Computer Science Society at the
               esteemed University of Manchester. Our mission is to foster unity
