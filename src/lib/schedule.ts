@@ -20,9 +20,9 @@ const scheduleList: ScheduleItems = [
     desc: "Day 1 of hackathon.",
     events: [
       {
-        time: "10:00AM - 11:00AM",
+        time: "09:00AM - 11:00AM",
         title: "Registration",
-        description: "Register for the hackathon on site.",
+        description: "Register for the hackathon on-site.",
       },
       {
         time: "11:00AM - 12:00PM",
