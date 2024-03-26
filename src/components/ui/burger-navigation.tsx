@@ -54,7 +54,7 @@ export const BurgerNav = ({
 
 
     return (
-        <header className={cn("z-50 fixed left-0 justify-end w-full flex top-0 py-6 px-6", className)}>
+        <header className={cn("z-[5000] fixed left-0 justify-end w-full flex top-0 py-6 px-6", className)}>
             <nav className="px-2 flex justify-end">
                 <div className="cursor-pointer" onClick={toggleMenu}>
                     <GiHamburgerMenu fontSize={30} />
@@ -80,16 +80,16 @@ export const BurgerNav = ({
                                 {navItems.map((item, index) => {
                                     return (
                                         <m.li variants={listItem} key={index} className="text-2xl font-medium text-white hover:text-white/60 cursor-pointer">
-                                            <Link href={item.link} onClick={toggleMenu}>
+                                            <a href={item.link} onClick={toggleMenu}>
                                                 {item.name}
-                                            </Link>
+                                            </a>
                                         </m.li>
                                     );
                                 })}
                                 <m.li variants={listItem} key={mainItem.name} className="text-2xl font-medium text-white hover:text-white/60 cursor-pointer">
-                                    <Link href={mainItem.link} onClick={toggleMenu}>
+                                    <a href={mainItem.link} onClick={toggleMenu}>
                                         {mainItem.name}
-                                    </Link>
+                                    </a>
                                 </m.li>
                             </m.ul>
 
