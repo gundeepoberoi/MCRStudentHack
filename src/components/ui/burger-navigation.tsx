@@ -54,7 +54,7 @@ export const BurgerNav = ({
 
 
     return (
-        <header className={cn("z-50 fixed left-0 justify-end w-full flex top-0 py-6 px-6", className)}>
+        <header className={cn("z-[5000] fixed left-0 justify-end w-full flex top-0 py-6 px-6", className)}>
             <nav className="px-2 flex justify-end">
                 <div className="cursor-pointer" onClick={toggleMenu}>
                     <GiHamburgerMenu fontSize={30} />

@@ -1,8 +1,12 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Roboto } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const roboto = Roboto({
+  // Need to specify the weight if not using a variable font
+  weight: "400", 
+  subsets: ["latin"], 
+});
 
 export const metadata: Metadata = {
   title: "StudentHack 2024",
@@ -17,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.className} bg-gradient-to-b from-gray-900 to-gray-950`}
+        className={`${roboto.className} bg-gradient-to-b from-gray-900 to-gray-950`}
       >
         {" "}
         {children}
