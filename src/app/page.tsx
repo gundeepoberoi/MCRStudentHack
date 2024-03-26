@@ -5,8 +5,8 @@ import FAQ from "@/components/sections/faq";
 import Navigation from "@/components/navigation";
 import Schedule from "@/components/sections/schedule";
 import Team from "@/components/sections/team";
+import Sponsors from "@/components/sections/sponsors/sponsors";
 import Hero from "@/components/sections/hero";
-
 import LightBackground from "@/components/ui/light-background";
 import { LazyMotion } from "framer-motion";
 
@@ -25,6 +25,7 @@ export default function Home() {
           <Hero />
           <About />
           <Schedule />
+          <Sponsors />
           <FAQ />
           <Team />
           <Footer />
