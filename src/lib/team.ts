@@ -56,12 +56,6 @@ const members: Member[] = [
     image: "/team/jacob_y.jpeg",
   },
   {
-    name: "Aadityaa M.",
-    role: "Dev",
-    image: "/team/aadityaa_m.jpg",
-    link: "https://www.linkedin.com/in/aadityaa-mehrotra",
-  },
-  {
     name: "Abdullah S.",
     role: "PR",
     image: "/team/abdullah_s.jpg",

@@ -13,7 +13,7 @@ const Footer: React.FC = () => {
           . All Rights Reserved.
           <br />
           Designed By: Gundeep Oberoi, Jacob Georgis, Yat Long Poon, Dhruv
-          Sharma, Aadityaa Mehrohtra, Jacob Yip and Hanin Amri.
+          Sharma, Aadityaa Mehrotra, Jacob Yip and Hanin Amri.
         </p>
       </div>
     </footer>

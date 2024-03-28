@@ -26,13 +26,14 @@ const Hero = () => {
         </div>
         <div>
           <form action="https://apply.mcrstudenthack.com/">
-            <input type="hidden" name="r" id="r" value="apply" />
+            <input type="hidden" name="r" id="r" value="interest" />
             <Button
-              className="text-cyan-100 text-lg"
+              className="text-cyan-100 text-sm"
               type="submit"
               containerClassName="bg-cyan-950"
             >
-              Register Now
+              Register Interest for <br />
+              Future Hackathons
             </Button>
           </form>
         </div>
@@ -44,10 +45,10 @@ const Hero = () => {
             className="justify-center"
             words={[
               {
-                text: "Registration",
+                text: "StudentHack2024",
                 className: "text-cyan-100",
               },
-              { text: "Closes in:", className: "text-cyan-300" },
+              { text: "Begins in:", className: "text-cyan-300" },
             ]}
           />
         </div>
