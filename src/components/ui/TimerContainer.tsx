@@ -4,7 +4,6 @@ import { NumberBox } from "./NumberBox";
 
 const TimerContainer = ({ currentDate }: { currentDate: Date }) => {
   const targetDate = new Date("2024-04-13T09:00:00");
-
   const timeDifference = targetDate.getTime() - currentDate.getTime();
   const initialDays = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
   const initialHours = Math.floor(
