@@ -3,8 +3,7 @@ import React, { useState, useEffect } from "react";
 import { NumberBox } from "./NumberBox";
 
 const TimerContainer = ({ currentDate }: { currentDate: Date }) => {
-  const targetDate = new Date("2024-03-28T23:59:59");
-
+  const targetDate = new Date("2024-04-13T09:00:00");
   const timeDifference = targetDate.getTime() - currentDate.getTime();
   const initialDays = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
   const initialHours = Math.floor(
