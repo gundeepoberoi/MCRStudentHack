@@ -8,6 +8,7 @@ import Image3 from "@/assets/images/about-image-3.jpg";
 import Image4 from "@/assets/images/about-image-4.jpg";
 import Image5 from "@/assets/images/about-image-5.jpg";
 import Image6 from "@/assets/images/about-image-6.jpg";
+import Image7 from "@/assets/images/about-image-7.jpg";
 import TrophyImg from "@/assets/images/about-trophy.png";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 
@@ -19,7 +20,7 @@ type Keys = "-1" | "0" | "1" | "2" | "3" | "4" | "5" | "6";
 /**
  * The dictionary/map for mapping the source of image with index
  * Used in AboutCarousel
- * How to ensure that the key entered must be valid? 
+ * How to ensure that the key entered must be valid? in function accessImage(), we use transparent image if the key entered is not correct
  */
 const images: Record<number, StaticImageData> = {
   0: Image0, 
@@ -29,7 +30,7 @@ const images: Record<number, StaticImageData> = {
   4: Image4, 
   5: Image5, 
   6: Image6, 
-  "-1": Image0    // TODO Can create a black image
+  "-1": Image7    // TODO Can create a black image - add transparent image cause background not always black
 } satisfies Record<Keys, StaticImageData>;
 
 
