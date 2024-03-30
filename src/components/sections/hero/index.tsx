@@ -21,6 +21,7 @@ const Hero = () => {
             width={600}
             height={600}
             alt={"Logo"}
+            priority
             className="w-full max-w-[500px] transition ease-in-out delay-150 hover:scale-110 content-center"
           />
         </div>

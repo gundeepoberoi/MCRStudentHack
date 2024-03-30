@@ -32,7 +32,6 @@ function StillMember({ name, role, image, link }: any) {
                                 width={500}
                                 height={500}
                                 alt={name}
-                                priority
                                 className='rounded-full w-[54%] mt-[18%] aspect-square object-cover object-center justify-self-center'
                             />
                             <Image
@@ -40,7 +39,6 @@ function StillMember({ name, role, image, link }: any) {
                                 width={500}
                                 height={500}
                                 alt={name}
-                                priority
                                 className='absolute inset-0 w-full z-10 aspect-square object-cover object-center justify-self-center'
                             />
 
@@ -83,7 +81,6 @@ export function FlipMember({ name, role, image, link }: any) {
                                     width={500}
                                     height={500}
                                     alt={name}
-                                    priority
                                     className='rounded-full w-[54%] mt-[18%] aspect-square object-center justify-self-center'
                                 />
                                 <Image
@@ -91,7 +88,6 @@ export function FlipMember({ name, role, image, link }: any) {
                                     width={500}
                                     height={500}
                                     alt={name}
-                                    priority
                                     className='absolute inset-0 w-full z-10 aspect-square object-center justify-self-center'
                                 />
 
