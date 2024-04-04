@@ -17,7 +17,7 @@
 .sun {
     width: 15vmax;
     height: 15vmax;
-    background-image: url('../../../assets/images/sun.gif');
+    background-image: url('../../../assets/images/sun.svg');
     background-position: center;
     background-size: 150%;
     background-repeat: no-repeat;

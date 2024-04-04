@@ -10,7 +10,7 @@ const roboto = Roboto({
 
 export const metadata: Metadata = {
   title: "StudentHack 2024",
-  description: "MCRStudentHack2024 organised by UniCS",
+  description: "Elevate your skills at StudentHack 2024, a student-led hackathon at The University of Manchester, proudly organised by UniCS.",
 };
 
 export default function RootLayout({
