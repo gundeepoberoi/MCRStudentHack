@@ -8,7 +8,7 @@ const Footer: React.FC = () => {
         <p className="text-xs md:text-sm text-gray-400 sm:text-center">
           © 2024{" "}
           <Link href="https://mcrstudenthack.com/" className="hover:underline">
-            MCRStudentHack
+            StudentHack
           </Link>
           . All Rights Reserved.
           <br />
