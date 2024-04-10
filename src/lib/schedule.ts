@@ -37,7 +37,7 @@ const scheduleList: ScheduleItems = [
       {
         time: "12:30PM",
         title: "Lunch",
-        description: "🍱🍜🥟",
+        description: "🍱🍪🥟",
       },
       {
         time: "01:00PM Onwards",
@@ -59,7 +59,7 @@ const scheduleList: ScheduleItems = [
       {
         time: "12:00AM",
         title: "Midnight Snack",
-        description: "🍕🍪🍆",
+        description: "🍕🍰🍜",
       },
       {
         time: "01:00AM Onwards",
@@ -79,7 +79,7 @@ const scheduleList: ScheduleItems = [
       {
         time: "01:35PM",
         title: "Lunch and Judging",
-        description: "🍱🍜🥟 and judging begins",
+        description: "🍱🍪🥟 and judging begins",
       },
       {
         time: "03:30PM - 04:00PM",
