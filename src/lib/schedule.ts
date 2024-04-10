@@ -59,7 +59,7 @@ const scheduleList: ScheduleItems = [
       {
         time: "12:00AM",
         title: "Midnight Snack",
-        description: "🍕🍪🧋",
+        description: "🍕🍪🍆",
       },
       {
         time: "01:00AM Onwards",
@@ -67,9 +67,9 @@ const scheduleList: ScheduleItems = [
         description: "Fun activities to keep you awake.",
       },
       {
-        time: "08:00AM",
+        time: "07:30AM",
         title: "Breakfast",
-        description: "🥨🥐☕",
+        description: "🍩🥐☕",
       },
       {
         time: "10:00AM - 12:00PM",
@@ -77,12 +77,12 @@ const scheduleList: ScheduleItems = [
         description: "Submit your projects.",
       },
       {
-        time: "12:30PM",
+        time: "01:35PM",
         title: "Lunch and Judging",
         description: "🍱🍜🥟 and judging begins",
       },
       {
-        time: "03:00PM - 04:00PM",
+        time: "03:30PM - 04:00PM",
         title: "Closing Ceremony",
         description: "Winners announced and closing ceremony.",
       },
