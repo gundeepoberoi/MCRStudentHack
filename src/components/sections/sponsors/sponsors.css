@@ -36,15 +36,15 @@
     animation: revolve 20s linear infinite;
 }
 .planet-1 {
-    width: 11vmax;
-    height: 11vmax;
-    background-image: url('../../../assets/images/nike.jpg');
+    width: 9vmax;
+    height: 9vmax;
+    background-image: url('../../../assets/images/hackathons_uk.svg');
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     border-radius: 50%;
     position: absolute;
-    animation: revolve 20s linear infinite;
+    animation: revolve-1 20s linear infinite;
 }
 .planet-2 {
     width: 10vmax;
@@ -61,6 +61,12 @@
     from { transform: rotate(0deg) translate(22vmax) rotate(0deg); }
     to { transform: rotate(360deg) translate(22vmax) rotate(-360deg); }
 }
+@keyframes revolve-1 {
+    from { transform: rotate(180deg) translate(18vmax) rotate(-180deg); }
+    to { transform: rotate(540deg) translate(18vmax) rotate(-540deg); }
+}
+
+
 @media (max-width: 800px) {
     #sponsors {
         height: 100vw;
@@ -77,7 +83,15 @@
         from { transform: rotate(0deg) translate(18vmax) rotate(0deg); }
         to { transform: rotate(360deg) translate(18vmax) rotate(-360deg); }
     }
+    @keyframes revolve-1 {
+        from { transform: rotate(180deg) translate(16vmax) rotate(-180deg); }
+        to { transform: rotate(540deg) translate(16vmax) rotate(-540deg); }
+    }
+
 }
 .planet:hover{
+    animation-play-state: paused;
+}
+.planet-1:hover{
     animation-play-state: paused;
 }

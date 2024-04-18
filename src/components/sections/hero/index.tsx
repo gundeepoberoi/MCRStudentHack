@@ -48,11 +48,11 @@ const Hero = () => {
                 text: "StudentHack2024",
                 className: "text-cyan-100",
               },
-              { text: "Begins in:", className: "text-cyan-300" },
+              { text: "Has Ended!", className: "text-cyan-300" },
             ]}
           />
         </div>
-        <TimerContainer currentDate={new Date()} />
+        {/* <TimerContainer currentDate={new Date()} /> */}
       </div>
 
       <Socials />
