@@ -25,8 +25,7 @@ const Hero = () => {
           />
         </div>
         <div>
-          <form action="https://apply.mcrstudenthack.com/">
-            <input type="hidden" name="r" id="r" value="interest" />
+          <form action="https://forms.gle/3eM3rCFDVYmvtZQk7">
             <Button
               className="text-cyan-100 text-sm"
               type="submit"
